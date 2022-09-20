@@ -5,4 +5,6 @@ __pycache__/
 /src/pcd/scripts/PointPainting/detector/data/
 *linux-gnu.so
 *.pth
+!checkpoint_epoch_80.pth
+!deeplabv3plus_r18-d8_512x1024_80k_cityscapes_20201226_080942-cff257fe.pth
 *.pkl
