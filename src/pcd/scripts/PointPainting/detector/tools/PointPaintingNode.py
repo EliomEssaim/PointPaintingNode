@@ -148,6 +148,7 @@ def callbackPoints(args, points, image_msg):
     bridge:cv_bridge.CvBridge = args[3]
     point_feature_encoder = args[4]
     data_processor = args[5]
+
     debug_dict = args[6]
 
 
@@ -241,9 +242,11 @@ def realtime(args, cfg):
     model = build_detector(model_cfg=cfg.MODEL, num_class=len(cfg.CLASS_NAMES), dataset=test_set)
 
     # 订阅两个话题
-    subcriber_laser = message_filters.Subscriber('/rslidar_points', PointCloud2, queue_size=5) # 设置成多少合适呢
+    # soft sync
+    subcriber_laser = message_filters.Subscriber('/rslidar_points', PointCloud2, queue_size=5) 
     subcriber_camera = message_filters.Subscriber('/camera/image_rect_color', Image, queue_size=15)
     sync = message_filters.ApproximateTimeSynchronizer([subcriber_laser, subcriber_camera],50,0.1,allow_headerless=True)
+    
     # model = None
     SEG_NET = 1
     extrinsics_path = './calib.txt'
@@ -262,6 +265,8 @@ def realtime(args, cfg):
         )
 
     ## debug begin ##
+    # codes for debugging
+    # you can add anything useful for debugging to the debug_dict
     debug_dict = {}
     import pickle
     with open('points.pkl','rb') as f:
@@ -272,6 +277,7 @@ def realtime(args, cfg):
         model.cuda()
         model.eval()
 
+        # callback arguments, this args will be binded by partial funtions.
         cb_args = [model,detected_objects_pub,painter,bridge,point_feature_encoder,data_processor,debug_dict]
         callback_with_args = partial(callbackPoints,cb_args)
         sync.registerCallback(callback_with_args)
