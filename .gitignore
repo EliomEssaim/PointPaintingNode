@@ -1,0 +1,8 @@
+/build
+/devel
+# /src/pcd/scripts/data/models
+__pycache__/
+/src/pcd/scripts/PointPainting/detector/data/
+*linux-gnu.so
+*.pth
+*.pkl

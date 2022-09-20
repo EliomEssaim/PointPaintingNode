@@ -1,0 +1,5883 @@
+Script started on 2022-09-12 07:04:36-0400
+]0;root@0019143280bc: /data/workspace/yelongjie/projects/PointPainting/painting_ws/src/pcd/scripts/PointPainting/detector/toolsroot@0019143280bc:/data/workspace/yelongjie/projects/PointPainting/painting_ws/src/pcd/scripts/PointPainting/detector/tools#  cd /data/workspace/yelongjie/projec
+cts/PointPainting/painting_ws/src/pcd/scripts/PointPainting/detector/tools ; /usr/bin/env /usr/bin/python3.8 /root/.vscode-server/extensions/ms-python.python-202
+22.14.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 33325 -- /data/workspace/yelongjie/projects/PointPainting/painting_ws/src/pcd/scripts/Point
+tPainting/detector/tools/PointPaintingNode.py 
+/usr/local/lib/python3.8/dist-packages/torch/functional.py:445: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  ../aten/src/ATen/native/TensorShape.cpp:2157.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Using Segmentation Network -- deeplabv3plus
+load checkpoint from local path: ../../painting/mmseg/checkpoints/deeplabv3plus_r101-d8_512x1024_80k_cityscapes_20200606_114143-068fcfe9.pth
+PointPainting Node spining!
+--------  0  --------
+sec:
+points    stamp -> 1659611115
+image_msg stamp -> 1659611115
+--------
+nsec:
+points    stamp -> 23630142
+image_msg stamp -> 38280521
+--------  1  --------
+sec:
+points    stamp -> 1659611115
+image_msg stamp -> 1659611115
+--------
+nsec:
+points    stamp -> 123485804
+image_msg stamp -> 54271787
+--------  2  --------
+sec:
+points    stamp -> 1659611115
+image_msg stamp -> 1659611115
+--------
+nsec:
+points    stamp -> 224024296
+image_msg stamp -> 203607729
+--------  3  --------
+sec:
+points    stamp -> 1659611115
+image_msg stamp -> 1659611115
+--------
+nsec:
+points    stamp -> 323929071
+image_msg stamp -> 303891876
+--------  4  --------
+sec:
+points    stamp -> 1659611115
+image_msg stamp -> 1659611115
+--------
+nsec:
+points    stamp -> 424146652
+image_msg stamp -> 403753443
+--------  5  --------
+sec:
+points    stamp -> 1659611115
+image_msg stamp -> 1659611115
+--------
+nsec:
+points    stamp -> 524043083
+image_msg stamp -> 470563067
+--------  6  --------
+sec:
+points    stamp -> 1659611115
+image_msg stamp -> 1659611115
+--------
+nsec:
+points    stamp -> 623806000
+image_msg stamp -> 603705295
+--------  7  --------
+sec:
+points    stamp -> 1659611115
+image_msg stamp -> 1659611115
+--------
+nsec:
+points    stamp -> 723724604
+image_msg stamp -> 703757632
+--------  8  --------
+sec:
+points    stamp -> 1659611115
+image_msg stamp -> 1659611115
+--------
+nsec:
+points    stamp -> 823847055
+image_msg stamp -> 770372318
+--------  9  --------
+sec:
+points    stamp -> 1659611115
+image_msg stamp -> 1659611115
+--------
+nsec:
+points    stamp -> 923818350
+image_msg stamp -> 903909161
+--------  10  --------
+sec:
+points    stamp -> 1659611116
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 23596287
+image_msg stamp -> 3769331
+--------  11  --------
+sec:
+points    stamp -> 1659611116
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 123554468
+image_msg stamp -> 70450370
+--------  12  --------
+sec:
+points    stamp -> 1659611116
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 223767042
+image_msg stamp -> 170537487
+--------  13  --------
+sec:
+points    stamp -> 1659611116
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 323479652
+image_msg stamp -> 303923165
+--------  14  --------
+sec:
+points    stamp -> 1659611116
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 423508644
+image_msg stamp -> 370644404
+--------  15  --------
+sec:
+points    stamp -> 1659611116
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 523354292
+image_msg stamp -> 504046225
+--------  16  --------
+sec:
+points    stamp -> 1659611116
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 623292685
+image_msg stamp -> 604182041
+--------  17  --------
+sec:
+points    stamp -> 1659611116
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 723454237
+image_msg stamp -> 704020813
+--------  18  --------
+sec:
+points    stamp -> 1659611116
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 823252439
+image_msg stamp -> 804197287
+--------  19  --------
+sec:
+points    stamp -> 1659611116
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 923814774
+image_msg stamp -> 903910744
+--------  20  --------
+sec:
+points    stamp -> 1659611117
+image_msg stamp -> 1659611116
+--------
+nsec:
+points    stamp -> 23736477
+image_msg stamp -> 970603300
+--------  21  --------
+sec:
+points    stamp -> 1659611117
+image_msg stamp -> 1659611117
+--------
+nsec:
+points    stamp -> 123724937
+image_msg stamp -> 103970096
+--------  22  --------
+sec:
+points    stamp -> 1659611117
+image_msg stamp -> 1659611117
+--------
+nsec:
+points    stamp -> 223694086
+image_msg stamp -> 204039393
+--------  23  --------
+sec:
+points    stamp -> 1659611117
+image_msg stamp -> 1659611117
+--------
+nsec:
+points    stamp -> 323724985
+image_msg stamp -> 304203535
+--------  24  --------
+sec:
+points    stamp -> 1659611117
+image_msg stamp -> 1659611117
+--------
+nsec:
+points    stamp -> 423663378
+image_msg stamp -> 404206062
+--------  25  --------
+sec:
+points    stamp -> 1659611117
+image_msg stamp -> 1659611117
+--------
+nsec:
+points    stamp -> 523788452
+image_msg stamp -> 504273298
+--------  26  --------
+sec:
+points    stamp -> 1659611117
+image_msg stamp -> 1659611117
+--------
+nsec:
+points    stamp -> 623506784
+image_msg stamp -> 604052534
+--------  27  --------
+sec:
+points    stamp -> 1659611117
+image_msg stamp -> 1659611117
+--------
+nsec:
+points    stamp -> 723485231
+image_msg stamp -> 670853009
+--------  28  --------
+sec:
+points    stamp -> 1659611117
+image_msg stamp -> 1659611117
+--------
+nsec:
+points    stamp -> 823431015
+image_msg stamp -> 804124137
+--------  29  --------
+sec:
+points    stamp -> 1659611117
+image_msg stamp -> 1659611117
+--------
+nsec:
+points    stamp -> 923371315
+image_msg stamp -> 904189426
+--------  30  --------
+sec:
+points    stamp -> 1659611118
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 23340940
+image_msg stamp -> 4303629
+--------  31  --------
+sec:
+points    stamp -> 1659611118
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 124050617
+image_msg stamp -> 70959810
+--------  32  --------
+sec:
+points    stamp -> 1659611118
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 223836184
+image_msg stamp -> 204328392
+--------  33  --------
+sec:
+points    stamp -> 1659611118
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 323830366
+image_msg stamp -> 304162285
+--------  34  --------
+sec:
+points    stamp -> 1659611118
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 423826694
+image_msg stamp -> 370935650
+--------  35  --------
+sec:
+points    stamp -> 1659611118
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 523711443
+image_msg stamp -> 470985827
+--------  36  --------
+sec:
+points    stamp -> 1659611118
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 623719692
+image_msg stamp -> 604230849
+--------  37  --------
+sec:
+points    stamp -> 1659611118
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 723731041
+image_msg stamp -> 671128421
+--------  38  --------
+sec:
+points    stamp -> 1659611118
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 823537588
+image_msg stamp -> 804243813
+--------  39  --------
+sec:
+points    stamp -> 1659611118
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 923707962
+image_msg stamp -> 904464184
+--------  40  --------
+sec:
+points    stamp -> 1659611119
+image_msg stamp -> 1659611118
+--------
+nsec:
+points    stamp -> 23456097
+image_msg stamp -> 971181252
+--------  41  --------
+sec:
+points    stamp -> 1659611119
+image_msg stamp -> 1659611119
+--------
+nsec:
+points    stamp -> 123476982
+image_msg stamp -> 71122919
+--------  42  --------
+sec:
+points    stamp -> 1659611119
+image_msg stamp -> 1659611119
+--------
+nsec:
+points    stamp -> 223365784
+image_msg stamp -> 204470689
+--------  43  --------
+sec:
+points    stamp -> 1659611119
+image_msg stamp -> 1659611119
+--------
+nsec:
+points    stamp -> 323365211
+image_msg stamp -> 271072750
+--------  44  --------
+sec:
+points    stamp -> 1659611119
+image_msg stamp -> 1659611119
+--------
+nsec:
+points    stamp -> 423916578
+image_msg stamp -> 404387219
+--------  45  --------
+sec:
+points    stamp -> 1659611119
+image_msg stamp -> 1659611119
+--------
+nsec:
+points    stamp -> 523913383
+image_msg stamp -> 504470549
+--------  46  --------
+sec:
+points    stamp -> 1659611119
+image_msg stamp -> 1659611119
+--------
+nsec:
+points    stamp -> 624119759
+image_msg stamp -> 604637116
+--------  47  --------
+sec:
+points    stamp -> 1659611119
+image_msg stamp -> 1659611119
+--------
+nsec:
+points    stamp -> 724082708
+image_msg stamp -> 704420693
+--------  48  --------
+sec:
+points    stamp -> 1659611119
+image_msg stamp -> 1659611119
+--------
+nsec:
+points    stamp -> 823764801
+image_msg stamp -> 804723932
+--------  49  --------
+sec:
+points    stamp -> 1659611119
+image_msg stamp -> 1659611119
+--------
+nsec:
+points    stamp -> 923819304
+image_msg stamp -> 904522854
+--------  50  --------
+sec:
+points    stamp -> 1659611120
+image_msg stamp -> 1659611120
+--------
+nsec:
+points    stamp -> 23717642
+image_msg stamp -> 4689881
+--------  51  --------
+sec:
+points    stamp -> 1659611120
+image_msg stamp -> 1659611120
+--------
+nsec:
+points    stamp -> 123799086
+image_msg stamp -> 104528412
+--------  52  --------
+sec:
+points    stamp -> 1659611120
+image_msg stamp -> 1659611120
+--------
+nsec:
+points    stamp -> 223719120
+image_msg stamp -> 204841573
+--------  53  --------
+sec:
+points    stamp -> 1659611120
+image_msg stamp -> 1659611120
+--------
+nsec:
+points    stamp -> 323532104
+image_msg stamp -> 304590283
+--------  54  --------
+sec:
+points    stamp -> 1659611120
+image_msg stamp -> 1659611120
+--------
+nsec:
+points    stamp -> 423534632
+image_msg stamp -> 404593740
+--------  55  --------
+sec:
+points    stamp -> 1659611120
+image_msg stamp -> 1659611120
+--------
+nsec:
+points    stamp -> 524166346
+image_msg stamp -> 471328758
+--------  56  --------
+sec:
+points    stamp -> 1659611120
+image_msg stamp -> 1659611120
+--------
+nsec:
+points    stamp -> 624175072
+image_msg stamp -> 571374388
+--------  57  --------
+sec:
+points    stamp -> 1659611120
+image_msg stamp -> 1659611120
+--------
+nsec:
+points    stamp -> 724046946
+image_msg stamp -> 704951649
+--------  58  --------
+sec:
+points    stamp -> 1659611120
+image_msg stamp -> 1659611120
+--------
+nsec:
+points    stamp -> 823955774
+image_msg stamp -> 804767277
+--------  59  --------
+sec:
+points    stamp -> 1659611120
+image_msg stamp -> 1659611120
+--------
+nsec:
+points    stamp -> 923934460
+image_msg stamp -> 904636121
+--------  60  --------
+sec:
+points    stamp -> 1659611121
+image_msg stamp -> 1659611121
+--------
+nsec:
+points    stamp -> 23876429
+image_msg stamp -> 4659558
+--------  61  --------
+sec:
+points    stamp -> 1659611121
+image_msg stamp -> 1659611121
+--------
+nsec:
+points    stamp -> 123812914
+image_msg stamp -> 104761664
+--------  62  --------
+sec:
+points    stamp -> 1659611121
+image_msg stamp -> 1659611121
+--------
+nsec:
+points    stamp -> 223898649
+image_msg stamp -> 204863317
+--------  63  --------
+sec:
+points    stamp -> 1659611121
+image_msg stamp -> 1659611121
+--------
+nsec:
+points    stamp -> 323713303
+image_msg stamp -> 271536047
+--------  64  --------
+sec:
+points    stamp -> 1659611121
+image_msg stamp -> 1659611121
+--------
+nsec:
+points    stamp -> 423684120
+image_msg stamp -> 404765117
+--------  65  --------
+sec:
+points    stamp -> 1659611121
+image_msg stamp -> 1659611121
+--------
+nsec:
+points    stamp -> 523690224
+image_msg stamp -> 504891804
+--------  66  --------
+sec:
+points    stamp -> 1659611121
+image_msg stamp -> 1659611121
+--------
+nsec:
+points    stamp -> 623527765
+image_msg stamp -> 604875574
+--------  67  --------
+sec:
+points    stamp -> 1659611121
+image_msg stamp -> 1659611121
+--------
+nsec:
+points    stamp -> 723592997
+image_msg stamp -> 704990291
+--------  68  --------
+sec:
+points    stamp -> 1659611121
+image_msg stamp -> 1659611121
+--------
+nsec:
+points    stamp -> 823662996
+image_msg stamp -> 804790061
+--------  69  --------
+sec:
+points    stamp -> 1659611121
+image_msg stamp -> 1659611121
+--------
+nsec:
+points    stamp -> 923448563
+image_msg stamp -> 904796311
+--------  70  --------
+sec:
+points    stamp -> 1659611122
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 23588896
+image_msg stamp -> 4980735
+--------  71  --------
+sec:
+points    stamp -> 1659611122
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 124086857
+image_msg stamp -> 105086227
+--------  72  --------
+sec:
+points    stamp -> 1659611122
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 223948002
+image_msg stamp -> 205112542
+--------  73  --------
+sec:
+points    stamp -> 1659611122
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 323940516
+image_msg stamp -> 271824779
+--------  74  --------
+sec:
+points    stamp -> 1659611122
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 423866987
+image_msg stamp -> 404929875
+--------  75  --------
+sec:
+points    stamp -> 1659611122
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 523925781
+image_msg stamp -> 504935846
+--------  76  --------
+sec:
+points    stamp -> 1659611122
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 623789549
+image_msg stamp -> 571634921
+--------  77  --------
+sec:
+points    stamp -> 1659611122
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 723721743
+image_msg stamp -> 705281985
+--------  78  --------
+sec:
+points    stamp -> 1659611122
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 823636293
+image_msg stamp -> 771917228
+--------  79  --------
+sec:
+points    stamp -> 1659611122
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 923624277
+image_msg stamp -> 905246367
+--------  80  --------
+sec:
+points    stamp -> 1659611123
+image_msg stamp -> 1659611122
+--------
+nsec:
+points    stamp -> 23611069
+image_msg stamp -> 972055407
+--------  81  --------
+sec:
+points    stamp -> 1659611123
+image_msg stamp -> 1659611123
+--------
+nsec:
+points    stamp -> 123528242
+image_msg stamp -> 105263416
+--------  82  --------
+sec:
+points    stamp -> 1659611123
+image_msg stamp -> 1659611123
+--------
+nsec:
+points    stamp -> 223500490
+image_msg stamp -> 205057446
+--------  83  --------
+sec:
+points    stamp -> 1659611123
+image_msg stamp -> 1659611123
+--------
+nsec:
+points    stamp -> 323414087
+image_msg stamp -> 271960628
+--------  84  --------
+sec:
+points    stamp -> 1659611123
+image_msg stamp -> 1659611123
+--------
+nsec:
+points    stamp -> 423367739
+image_msg stamp -> 405211033
+--------  85  --------
+sec:
+points    stamp -> 1659611123
+image_msg stamp -> 1659611123
+--------
+nsec:
+points    stamp -> 523367167
+image_msg stamp -> 505081197
+--------  86  --------
+sec:
+points    stamp -> 1659611123
+image_msg stamp -> 1659611123
+--------
+nsec:
+points    stamp -> 623390198
+image_msg stamp -> 605322186
+--------  87  --------
+sec:
+points    stamp -> 1659611123
+image_msg stamp -> 1659611123
+--------
+nsec:
+points    stamp -> 723399401
+image_msg stamp -> 671821073
+--------  88  --------
+sec:
+points    stamp -> 1659611123
+image_msg stamp -> 1659611123
+--------
+nsec:
+points    stamp -> 823210001
+image_msg stamp -> 805367204
+--------  89  --------
+sec:
+points    stamp -> 1659611123
+image_msg stamp -> 1659611123
+--------
+nsec:
+points    stamp -> 923112631
+image_msg stamp -> 905352706
+--------  90  --------
+sec:
+points    stamp -> 1659611124
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 23725748
+image_msg stamp -> 5252623
+--------  91  --------
+sec:
+points    stamp -> 1659611124
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 123820782
+image_msg stamp -> 105230415
+--------  92  --------
+sec:
+points    stamp -> 1659611124
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 223628044
+image_msg stamp -> 205364060
+--------  93  --------
+sec:
+points    stamp -> 1659611124
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 323669910
+image_msg stamp -> 272064674
+--------  94  --------
+sec:
+points    stamp -> 1659611124
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 423754215
+image_msg stamp -> 405526924
+--------  95  --------
+sec:
+points    stamp -> 1659611124
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 523527622
+image_msg stamp -> 505511551
+--------  96  --------
+sec:
+points    stamp -> 1659611124
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 623423576
+image_msg stamp -> 572123339
+--------  97  --------
+sec:
+points    stamp -> 1659611124
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 723652840
+image_msg stamp -> 672122018
+--------  98  --------
+sec:
+points    stamp -> 1659611124
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 823379278
+image_msg stamp -> 771993545
+--------  99  --------
+sec:
+points    stamp -> 1659611124
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 923591852
+image_msg stamp -> 905373447
+--------  100  --------
+sec:
+points    stamp -> 1659611125
+image_msg stamp -> 1659611124
+--------
+nsec:
+points    stamp -> 24130821
+image_msg stamp -> 972179399
+--------  101  --------
+sec:
+points    stamp -> 1659611125
+image_msg stamp -> 1659611125
+--------
+nsec:
+points    stamp -> 123904228
+image_msg stamp -> 105523934
+--------  102  --------
+sec:
+points    stamp -> 1659611125
+image_msg stamp -> 1659611125
+--------
+nsec:
+points    stamp -> 223986626
+image_msg stamp -> 205418213
+--------  103  --------
+sec:
+points    stamp -> 1659611125
+image_msg stamp -> 1659611125
+--------
+nsec:
+points    stamp -> 323901653
+image_msg stamp -> 272234929
+--------  104  --------
+sec:
+points    stamp -> 1659611125
+image_msg stamp -> 1659611125
+--------
+nsec:
+points    stamp -> 423761845
+image_msg stamp -> 405447448
+--------  105  --------
+sec:
+points    stamp -> 1659611125
+image_msg stamp -> 1659611125
+--------
+nsec:
+points    stamp -> 523688793
+image_msg stamp -> 505460215
+--------  106  --------
+sec:
+points    stamp -> 1659611125
+image_msg stamp -> 1659611125
+--------
+nsec:
+points    stamp -> 623629570
+image_msg stamp -> 605715867
+--------  107  --------
+sec:
+points    stamp -> 1659611125
+image_msg stamp -> 1659611125
+--------
+nsec:
+points    stamp -> 723628759
+image_msg stamp -> 705779475
+--------  108  --------
+sec:
+points    stamp -> 1659611125
+image_msg stamp -> 1659611125
+--------
+nsec:
+points    stamp -> 824255228
+image_msg stamp -> 805844115
+--------  109  --------
+sec:
+points    stamp -> 1659611125
+image_msg stamp -> 1659611125
+--------
+nsec:
+points    stamp -> 924197912
+image_msg stamp -> 905520333
+--------  110  --------
+sec:
+points    stamp -> 1659611126
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 24131775
+image_msg stamp -> 5602831
+--------  111  --------
+sec:
+points    stamp -> 1659611126
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 124088287
+image_msg stamp -> 105680627
+--------  112  --------
+sec:
+points    stamp -> 1659611126
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 224097490
+image_msg stamp -> 205595794
+--------  113  --------
+sec:
+points    stamp -> 1659611126
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 324056387
+image_msg stamp -> 272270967
+--------  114  --------
+sec:
+points    stamp -> 1659611126
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 423965454
+image_msg stamp -> 405620503
+--------  115  --------
+sec:
+points    stamp -> 1659611126
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 523937225
+image_msg stamp -> 505628755
+--------  116  --------
+sec:
+points    stamp -> 1659611126
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 624094725
+image_msg stamp -> 572438376
+--------  117  --------
+sec:
+points    stamp -> 1659611126
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 724022388
+image_msg stamp -> 706069849
+--------  118  --------
+sec:
+points    stamp -> 1659611126
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 823962927
+image_msg stamp -> 805794214
+--------  119  --------
+sec:
+points    stamp -> 1659611126
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 923912525
+image_msg stamp -> 905708928
+--------  120  --------
+sec:
+points    stamp -> 1659611127
+image_msg stamp -> 1659611126
+--------
+nsec:
+points    stamp -> 23721457
+image_msg stamp -> 972506468
+--------  121  --------
+sec:
+points    stamp -> 1659611127
+image_msg stamp -> 1659611127
+--------
+nsec:
+points    stamp -> 123591185
+image_msg stamp -> 72559021
+--------  122  --------
+sec:
+points    stamp -> 1659611127
+image_msg stamp -> 1659611127
+--------
+nsec:
+points    stamp -> 223510027
+image_msg stamp -> 172432864
+--------  123  --------
+sec:
+points    stamp -> 1659611127
+image_msg stamp -> 1659611127
+--------
+nsec:
+points    stamp -> 324380159
+image_msg stamp -> 305921540
+--------  124  --------
+sec:
+points    stamp -> 1659611127
+image_msg stamp -> 1659611127
+--------
+nsec:
+points    stamp -> 424365997
+image_msg stamp -> 372794333
+--------  125  --------
+sec:
+points    stamp -> 1659611127
+image_msg stamp -> 1659611127
+--------
+nsec:
+points    stamp -> 524242878
+image_msg stamp -> 505886329
+--------  126  --------
+sec:
+points    stamp -> 1659611127
+image_msg stamp -> 1659611127
+--------
+nsec:
+points    stamp -> 624052763
+image_msg stamp -> 572585602
+--------  127  --------
+sec:
+points    stamp -> 1659611127
+image_msg stamp -> 1659611127
+--------
+nsec:
+points    stamp -> 724000454
+image_msg stamp -> 706104240
+--------  128  --------
+sec:
+points    stamp -> 1659611127
+image_msg stamp -> 1659611127
+--------
+nsec:
+points    stamp -> 823955536
+image_msg stamp -> 806009342
+--------  129  --------
+sec:
+points    stamp -> 1659611127
+image_msg stamp -> 1659611127
+--------
+nsec:
+points    stamp -> 923931837
+image_msg stamp -> 872570803
+--------  130  --------
+sec:
+points    stamp -> 1659611128
+image_msg stamp -> 1659611127
+--------
+nsec:
+points    stamp -> 23876667
+image_msg stamp -> 972704568
+--------  131  --------
+sec:
+points    stamp -> 1659611128
+image_msg stamp -> 1659611128
+--------
+nsec:
+points    stamp -> 123814583
+image_msg stamp -> 106050809
+--------  132  --------
+sec:
+points    stamp -> 1659611128
+image_msg stamp -> 1659611128
+--------
+nsec:
+points    stamp -> 223849773
+image_msg stamp -> 172895675
+--------  133  --------
+sec:
+points    stamp -> 1659611128
+image_msg stamp -> 1659611128
+--------
+nsec:
+points    stamp -> 323797464
+image_msg stamp -> 272674351
+--------  134  --------
+sec:
+points    stamp -> 1659611128
+image_msg stamp -> 1659611128
+--------
+nsec:
+points    stamp -> 423672676
+image_msg stamp -> 372804100
+--------  135  --------
+sec:
+points    stamp -> 1659611128
+image_msg stamp -> 1659611128
+--------
+nsec:
+points    stamp -> 523674965
+image_msg stamp -> 472742042
+--------  136  --------
+sec:
+points    stamp -> 1659611128
+image_msg stamp -> 1659611128
+--------
+nsec:
+points    stamp -> 623555422
+image_msg stamp -> 606050851
+--------  137  --------
+sec:
+points    stamp -> 1659611128
+image_msg stamp -> 1659611128
+--------
+nsec:
+points    stamp -> 724163771
+image_msg stamp -> 706348495
+--------  138  --------
+sec:
+points    stamp -> 1659611128
+image_msg stamp -> 1659611128
+--------
+nsec:
+points    stamp -> 824174404
+image_msg stamp -> 772765433
+--------  139  --------
+sec:
+points    stamp -> 1659611128
+image_msg stamp -> 1659611128
+--------
+nsec:
+points    stamp -> 924108505
+image_msg stamp -> 906113231
+--------  140  --------
+sec:
+points    stamp -> 1659611129
+image_msg stamp -> 1659611129
+--------
+nsec:
+points    stamp -> 24286270
+image_msg stamp -> 6417787
+--------  141  --------
+sec:
+points    stamp -> 1659611129
+image_msg stamp -> 1659611129
+--------
+nsec:
+points    stamp -> 124190569
+image_msg stamp -> 72858869
+--------  142  --------
+sec:
+points    stamp -> 1659611129
+image_msg stamp -> 1659611129
+--------
+nsec:
+points    stamp -> 223990202
+image_msg stamp -> 172914757
+--------  143  --------
+sec:
+points    stamp -> 1659611129
+image_msg stamp -> 1659611129
+--------
+nsec:
+points    stamp -> 324093580
+image_msg stamp -> 306271392
+--------  144  --------
+sec:
+points    stamp -> 1659611129
+image_msg stamp -> 1659611129
+--------
+nsec:
+points    stamp -> 424064398
+image_msg stamp -> 372805703
+--------  145  --------
+sec:
+points    stamp -> 1659611129
+image_msg stamp -> 1659611129
+--------
+nsec:
+points    stamp -> 524058819
+image_msg stamp -> 506484264
+--------  146  --------
+sec:
+points    stamp -> 1659611129
+image_msg stamp -> 1659611129
+--------
+nsec:
+points    stamp -> 623942375
+image_msg stamp -> 606316587
+--------  147  --------
+sec:
+points    stamp -> 1659611129
+image_msg stamp -> 1659611129
+--------
+nsec:
+points    stamp -> 723800898
+image_msg stamp -> 673081247
+--------  148  --------
+sec:
+points    stamp -> 1659611129
+image_msg stamp -> 1659611129
+--------
+nsec:
+points    stamp -> 823612690
+image_msg stamp -> 772950076
+--------  149  --------
+sec:
+points    stamp -> 1659611129
+image_msg stamp -> 1659611129
+--------
+nsec:
+points    stamp -> 923747778
+image_msg stamp -> 872984104
+--------  150  --------
+sec:
+points    stamp -> 1659611130
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 23534298
+image_msg stamp -> 6556080
+--------  151  --------
+sec:
+points    stamp -> 1659611130
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 123526812
+image_msg stamp -> 106485113
+--------  152  --------
+sec:
+points    stamp -> 1659611130
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 223614693
+image_msg stamp -> 173017136
+--------  153  --------
+sec:
+points    stamp -> 1659611130
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 323637724
+image_msg stamp -> 273023266
+--------  154  --------
+sec:
+points    stamp -> 1659611130
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 423360825
+image_msg stamp -> 406370443
+--------  155  --------
+sec:
+points    stamp -> 1659611130
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 523299217
+image_msg stamp -> 473065408
+--------  156  --------
+sec:
+points    stamp -> 1659611130
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 623359203
+image_msg stamp -> 573028484
+--------  157  --------
+sec:
+points    stamp -> 1659611130
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 723919153
+image_msg stamp -> 673208461
+--------  158  --------
+sec:
+points    stamp -> 1659611130
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 823942423
+image_msg stamp -> 773392196
+--------  159  --------
+sec:
+points    stamp -> 1659611130
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 923953295
+image_msg stamp -> 873143442
+--------  160  --------
+sec:
+points    stamp -> 1659611131
+image_msg stamp -> 1659611130
+--------
+nsec:
+points    stamp -> 23968697
+image_msg stamp -> 973455375
+--------  161  --------
+sec:
+points    stamp -> 1659611131
+image_msg stamp -> 1659611131
+--------
+nsec:
+points    stamp -> 123710871
+image_msg stamp -> 106705950
+--------  162  --------
+sec:
+points    stamp -> 1659611131
+image_msg stamp -> 1659611131
+--------
+nsec:
+points    stamp -> 223637104
+image_msg stamp -> 173200010
+--------  163  --------
+sec:
+points    stamp -> 1659611131
+image_msg stamp -> 1659611131
+--------
+nsec:
+points    stamp -> 323641300
+image_msg stamp -> 306504832
+--------  164  --------
+sec:
+points    stamp -> 1659611131
+image_msg stamp -> 1659611131
+--------
+nsec:
+points    stamp -> 424224854
+image_msg stamp -> 373234943
+--------  165  --------
+sec:
+points    stamp -> 1659611131
+image_msg stamp -> 1659611131
+--------
+nsec:
+points    stamp -> 524128199
+image_msg stamp -> 473205562
+--------  166  --------
+sec:
+points    stamp -> 1659611131
+image_msg stamp -> 1659611131
+--------
+nsec:
+points    stamp -> 624212027
+image_msg stamp -> 606698680
+--------  167  --------
+sec:
+points    stamp -> 1659611131
+image_msg stamp -> 1659611131
+--------
+nsec:
+points    stamp -> 724076509
+image_msg stamp -> 673296842
+--------  168  --------
+sec:
+points    stamp -> 1659611131
+image_msg stamp -> 1659611131
+--------
+nsec:
+points    stamp -> 824224710
+image_msg stamp -> 806625980
+--------  169  --------
+sec:
+points    stamp -> 1659611131
+image_msg stamp -> 1659611131
+--------
+nsec:
+points    stamp -> 923963308
+image_msg stamp -> 906668854
+--------  170  --------
+sec:
+points    stamp -> 1659611132
+image_msg stamp -> 1659611131
+--------
+nsec:
+points    stamp -> 23921490
+image_msg stamp -> 973428929
+--------  171  --------
+sec:
+points    stamp -> 1659611132
+image_msg stamp -> 1659611132
+--------
+nsec:
+points    stamp -> 124037266
+image_msg stamp -> 106724740
+--------  172  --------
+sec:
+points    stamp -> 1659611132
+image_msg stamp -> 1659611132
+--------
+nsec:
+points    stamp -> 223784924
+image_msg stamp -> 206716944
+--------  173  --------
+sec:
+points    stamp -> 1659611132
+image_msg stamp -> 1659611132
+--------
+nsec:
+points    stamp -> 323781013
+image_msg stamp -> 273697630
+--------  174  --------
+sec:
+points    stamp -> 1659611132
+image_msg stamp -> 1659611132
+--------
+nsec:
+points    stamp -> 423753023
+image_msg stamp -> 373620490
+--------  175  --------
+sec:
+points    stamp -> 1659611132
+image_msg stamp -> 1659611132
+--------
+nsec:
+points    stamp -> 523690701
+image_msg stamp -> 473472050
+--------  176  --------
+sec:
+points    stamp -> 1659611132
+image_msg stamp -> 1659611132
+--------
+nsec:
+points    stamp -> 623682499
+image_msg stamp -> 606935069
+--------  177  --------
+sec:
+points    stamp -> 1659611132
+image_msg stamp -> 1659611132
+--------
+nsec:
+points    stamp -> 723579884
+image_msg stamp -> 706846744
+--------  178  --------
+sec:
+points    stamp -> 1659611132
+image_msg stamp -> 1659611132
+--------
+nsec:
+points    stamp -> 823530912
+image_msg stamp -> 773769667
+--------  179  --------
+sec:
+points    stamp -> 1659611132
+image_msg stamp -> 1659611132
+--------
+nsec:
+points    stamp -> 923503399
+image_msg stamp -> 906910364
+--------  180  --------
+sec:
+points    stamp -> 1659611133
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 23462772
+image_msg stamp -> 7095904
+--------  181  --------
+sec:
+points    stamp -> 1659611133
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 123619556
+image_msg stamp -> 73586056
+--------  182  --------
+sec:
+points    stamp -> 1659611133
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 224021196
+image_msg stamp -> 173619733
+--------  183  --------
+sec:
+points    stamp -> 1659611133
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 323995113
+image_msg stamp -> 273634703
+--------  184  --------
+sec:
+points    stamp -> 1659611133
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 423936367
+image_msg stamp -> 406954341
+--------  185  --------
+sec:
+points    stamp -> 1659611133
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 523974419
+image_msg stamp -> 473564661
+--------  186  --------
+sec:
+points    stamp -> 1659611133
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 623817921
+image_msg stamp -> 607172458
+--------  187  --------
+sec:
+points    stamp -> 1659611133
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 723766327
+image_msg stamp -> 707010236
+--------  188  --------
+sec:
+points    stamp -> 1659611133
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 823755741
+image_msg stamp -> 773654028
+--------  189  --------
+sec:
+points    stamp -> 1659611133
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 923673868
+image_msg stamp -> 873721815
+--------  190  --------
+sec:
+points    stamp -> 1659611134
+image_msg stamp -> 1659611133
+--------
+nsec:
+points    stamp -> 23726225
+image_msg stamp -> 973662200
+--------  191  --------
+sec:
+points    stamp -> 1659611134
+image_msg stamp -> 1659611134
+--------
+nsec:
+points    stamp -> 123789549
+image_msg stamp -> 73745657
+--------  192  --------
+sec:
+points    stamp -> 1659611134
+image_msg stamp -> 1659611134
+--------
+nsec:
+points    stamp -> 223669767
+image_msg stamp -> 207060736
+--------  193  --------
+sec:
+points    stamp -> 1659611134
+image_msg stamp -> 1659611134
+--------
+nsec:
+points    stamp -> 324159861
+image_msg stamp -> 307114758
+--------  194  --------
+sec:
+points    stamp -> 1659611134
+image_msg stamp -> 1659611134
+--------
+nsec:
+points    stamp -> 424114943
+image_msg stamp -> 373739044
+--------  195  --------
+sec:
+points    stamp -> 1659611134
+image_msg stamp -> 1659611134
+--------
+nsec:
+points    stamp -> 524048805
+image_msg stamp -> 507149413
+--------  196  --------
+sec:
+points    stamp -> 1659611134
+image_msg stamp -> 1659611134
+--------
+nsec:
+points    stamp -> 624022961
+image_msg stamp -> 574028304
+--------  197  --------
+sec:
+points    stamp -> 1659611134
+image_msg stamp -> 1659611134
+--------
+nsec:
+points    stamp -> 723994255
+image_msg stamp -> 673797325
+--------  198  --------
+sec:
+points    stamp -> 1659611134
+image_msg stamp -> 1659611134
+--------
+nsec:
+points    stamp -> 823881388
+image_msg stamp -> 774008773
+--------  199  --------
+sec:
+points    stamp -> 1659611134
+image_msg stamp -> 1659611134
+--------
+nsec:
+points    stamp -> 923950195
+image_msg stamp -> 907170656
+--------  200  --------
+sec:
+points    stamp -> 1659611135
+image_msg stamp -> 1659611134
+--------
+nsec:
+points    stamp -> 24014950
+image_msg stamp -> 974141082
+--------  201  --------
+sec:
+points    stamp -> 1659611135
+image_msg stamp -> 1659611135
+--------
+nsec:
+points    stamp -> 123851299
+image_msg stamp -> 74156888
+--------  202  --------
+sec:
+points    stamp -> 1659611135
+image_msg stamp -> 1659611135
+--------
+nsec:
+points    stamp -> 224536419
+image_msg stamp -> 207476852
+--------  203  --------
+sec:
+points    stamp -> 1659611135
+image_msg stamp -> 1659611135
+--------
+nsec:
+points    stamp -> 324344873
+image_msg stamp -> 307278112
+--------  204  --------
+sec:
+points    stamp -> 1659611135
+image_msg stamp -> 1659611135
+--------
+nsec:
+points    stamp -> 424262762
+image_msg stamp -> 373947191
+--------  205  --------
+sec:
+points    stamp -> 1659611135
+image_msg stamp -> 1659611135
+--------
+nsec:
+points    stamp -> 524457932
+image_msg stamp -> 474026788
+--------  206  --------
+sec:
+points    stamp -> 1659611135
+image_msg stamp -> 1659611135
+--------
+nsec:
+points    stamp -> 624531507
+image_msg stamp -> 574017123
+--------  207  --------
+sec:
+points    stamp -> 1659611135
+image_msg stamp -> 1659611135
+--------
+nsec:
+points    stamp -> 724138737
+image_msg stamp -> 707321787
+--------  208  --------
+sec:
+points    stamp -> 1659611135
+image_msg stamp -> 1659611135
+--------
+nsec:
+points    stamp -> 824075460
+image_msg stamp -> 774226491
+--------  209  --------
+sec:
+points    stamp -> 1659611135
+image_msg stamp -> 1659611135
+--------
+nsec:
+points    stamp -> 924243450
+image_msg stamp -> 907491545
+--------  210  --------
+sec:
+points    stamp -> 1659611136
+image_msg stamp -> 1659611135
+--------
+nsec:
+points    stamp -> 24013042
+image_msg stamp -> 974104875
+--------  211  --------
+sec:
+points    stamp -> 1659611136
+image_msg stamp -> 1659611136
+--------
+nsec:
+points    stamp -> 124026775
+image_msg stamp -> 74089621
+--------  212  --------
+sec:
+points    stamp -> 1659611136
+image_msg stamp -> 1659611136
+--------
+nsec:
+points    stamp -> 223967552
+image_msg stamp -> 207641253
+--------  213  --------
+sec:
+points    stamp -> 1659611136
+image_msg stamp -> 1659611136
+--------
+nsec:
+points    stamp -> 324075937
+image_msg stamp -> 274267977
+--------  214  --------
+sec:
+points    stamp -> 1659611136
+image_msg stamp -> 1659611136
+--------
+nsec:
+points    stamp -> 423831701
+image_msg stamp -> 374167977
+--------  215  --------
+sec:
+points    stamp -> 1659611136
+image_msg stamp -> 1659611136
+--------
+nsec:
+points    stamp -> 523798943
+image_msg stamp -> 474152399
+--------  216  --------
+sec:
+points    stamp -> 1659611136
+image_msg stamp -> 1659611136
+--------
+nsec:
+points    stamp -> 623707294
+image_msg stamp -> 574459137
+--------  217  --------
+sec:
+points    stamp -> 1659611136
+image_msg stamp -> 1659611136
+--------
+nsec:
+points    stamp -> 723701477
+image_msg stamp -> 674429317
+--------  218  --------
+sec:
+points    stamp -> 1659611136
+image_msg stamp -> 1659611136
+--------
+nsec:
+points    stamp -> 823622942
+image_msg stamp -> 774414336
+--------  219  --------
+sec:
+points    stamp -> 1659611136
+image_msg stamp -> 1659611136
+--------
+nsec:
+points    stamp -> 923795223
+image_msg stamp -> 907749578
+--------  220  --------
+sec:
+points    stamp -> 1659611137
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 23503304
+image_msg stamp -> 7790829
+--------  221  --------
+sec:
+points    stamp -> 1659611137
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 124144793
+image_msg stamp -> 74257074
+--------  222  --------
+sec:
+points    stamp -> 1659611137
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 224084854
+image_msg stamp -> 207740405
+--------  223  --------
+sec:
+points    stamp -> 1659611137
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 324085236
+image_msg stamp -> 274294123
+--------  224  --------
+sec:
+points    stamp -> 1659611137
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 424024820
+image_msg stamp -> 374479398
+--------  225  --------
+sec:
+points    stamp -> 1659611137
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 524173737
+image_msg stamp -> 474307907
+--------  226  --------
+sec:
+points    stamp -> 1659611137
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 623965979
+image_msg stamp -> 574330685
+--------  227  --------
+sec:
+points    stamp -> 1659611137
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 723971128
+image_msg stamp -> 674462859
+--------  228  --------
+sec:
+points    stamp -> 1659611137
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 823817492
+image_msg stamp -> 807679418
+--------  229  --------
+sec:
+points    stamp -> 1659611137
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 923766851
+image_msg stamp -> 874392526
+--------  230  --------
+sec:
+points    stamp -> 1659611138
+image_msg stamp -> 1659611137
+--------
+nsec:
+points    stamp -> 23736000
+image_msg stamp -> 974577738
+--------  231  --------
+sec:
+points    stamp -> 1659611138
+image_msg stamp -> 1659611138
+--------
+nsec:
+points    stamp -> 123648882
+image_msg stamp -> 74636859
+--------  232  --------
+sec:
+points    stamp -> 1659611138
+image_msg stamp -> 1659611138
+--------
+nsec:
+points    stamp -> 223713398
+image_msg stamp -> 174451229
+--------  233  --------
+sec:
+points    stamp -> 1659611138
+image_msg stamp -> 1659611138
+--------
+nsec:
+points    stamp -> 323792219
+image_msg stamp -> 307856136
+--------  234  --------
+sec:
+points    stamp -> 1659611138
+image_msg stamp -> 1659611138
+--------
+nsec:
+points    stamp -> 424201488
+image_msg stamp -> 374467453
+--------  235  --------
+sec:
+points    stamp -> 1659611138
+image_msg stamp -> 1659611138
+--------
+nsec:
+points    stamp -> 524255753
+image_msg stamp -> 508020445
+--------  236  --------
+sec:
+points    stamp -> 1659611138
+image_msg stamp -> 1659611138
+--------
+nsec:
+points    stamp -> 624089718
+image_msg stamp -> 607939493
+--------  237  --------
+sec:
+points    stamp -> 1659611138
+image_msg stamp -> 1659611138
+--------
+nsec:
+points    stamp -> 724137068
+image_msg stamp -> 674517610
+--------  238  --------
+sec:
+points    stamp -> 1659611138
+image_msg stamp -> 1659611138
+--------
+nsec:
+points    stamp -> 823960066
+image_msg stamp -> 774570767
+--------  239  --------
+sec:
+points    stamp -> 1659611138
+image_msg stamp -> 1659611138
+--------
+nsec:
+points    stamp -> 923985243
+image_msg stamp -> 874557712
+--------  240  --------
+sec:
+points    stamp -> 1659611139
+image_msg stamp -> 1659611138
+--------
+nsec:
+points    stamp -> 23924828
+image_msg stamp -> 974635273
+--------  241  --------
+sec:
+points    stamp -> 1659611139
+image_msg stamp -> 1659611139
+--------
+nsec:
+points    stamp -> 123841286
+image_msg stamp -> 74632380
+--------  242  --------
+sec:
+points    stamp -> 1659611139
+image_msg stamp -> 1659611139
+--------
+nsec:
+points    stamp -> 223839283
+image_msg stamp -> 174680958
+--------  243  --------
+sec:
+points    stamp -> 1659611139
+image_msg stamp -> 1659611139
+--------
+nsec:
+points    stamp -> 323758364
+image_msg stamp -> 274664897
+--------  244  --------
+sec:
+points    stamp -> 1659611139
+image_msg stamp -> 1659611139
+--------
+nsec:
+points    stamp -> 423717976
+image_msg stamp -> 374883238
+--------  245  --------
+sec:
+points    stamp -> 1659611139
+image_msg stamp -> 1659611139
+--------
+nsec:
+points    stamp -> 524315357
+image_msg stamp -> 474700528
+--------  246  --------
+sec:
+points    stamp -> 1659611139
+image_msg stamp -> 1659611139
+--------
+nsec:
+points    stamp -> 624251604
+image_msg stamp -> 608024710
+--------  247  --------
+sec:
+points    stamp -> 1659611139
+image_msg stamp -> 1659611139
+--------
+nsec:
+points    stamp -> 724377632
+image_msg stamp -> 674967312
+--------  248  --------
+sec:
+points    stamp -> 1659611139
+image_msg stamp -> 1659611139
+--------
+nsec:
+points    stamp -> 824387074
+image_msg stamp -> 774983270
+
+
+docker run -d \
+  --restart=always \
+  --name registry \
+  -v "$(pwd)"/certs:/certs \
+  -v /data/docker_imgs:/var/lib/registry \
+  -e REGISTRY_HTTP_ADDR=0.0.0.0:443 \
+  -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt \
+  -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key \
+  -p 443:443 \
+  registry:2
+
+ 
+--------  249  --------
+sec:
+points    stamp -> 1659611139
+image_msg stamp -> 1659611139
+--------
+nsec:
+points    stamp -> 924248934
+image_msg stamp -> 874820652
+--------  250  --------
+sec:
+points    stamp -> 1659611140
+image_msg stamp -> 1659611139
+--------
+nsec:
+points    stamp -> 24128914
+image_msg stamp -> 974804994
+--------  251  --------
+sec:
+points    stamp -> 1659611140
+image_msg stamp -> 1659611140
+--------
+nsec:
+points    stamp -> 124099016
+image_msg stamp -> 74986732
+--------  252  --------
+sec:
+points    stamp -> 1659611140
+image_msg stamp -> 1659611140
+--------
+nsec:
+points    stamp -> 224191666
+image_msg stamp -> 208163649
+--------  253  --------
+sec:
+points    stamp -> 1659611140
+image_msg stamp -> 1659611140
+--------
+nsec:
+points    stamp -> 324107409
+image_msg stamp -> 275012008
+--------  254  --------
+sec:
+points    stamp -> 1659611140
+image_msg stamp -> 1659611140
+--------
+nsec:
+points    stamp -> 423931837
+image_msg stamp -> 374843933
+--------  255  --------
+sec:
+points    stamp -> 1659611140
+image_msg stamp -> 1659611140
+--------
+nsec:
+points    stamp -> 523852348
+image_msg stamp -> 474965356
+--------  256  --------
+sec:
+points    stamp -> 1659611140
+image_msg stamp -> 1659611140
+--------
+nsec:
+points    stamp -> 623784304
+image_msg stamp -> 608458283
+--------  257  --------
+sec:
+points    stamp -> 1659611140
+image_msg stamp -> 1659611140
+--------
+nsec:
+points    stamp -> 723715782
+image_msg stamp -> 708267113
+--------  258  --------
+sec:
+points    stamp -> 1659611140
+image_msg stamp -> 1659611140
+--------
+nsec:
+points    stamp -> 823721170
+image_msg stamp -> 775140379
+--------  259  --------
+sec:
+points    stamp -> 1659611140
+image_msg stamp -> 1659611140
+--------
+nsec:
+points    stamp -> 924469471
+image_msg stamp -> 875292387
+--------  260  --------
+sec:
+points    stamp -> 1659611141
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 24459839
+image_msg stamp -> 8497930
+--------  261  --------
+sec:
+points    stamp -> 1659611141
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 124498129
+image_msg stamp -> 75081576
+--------  262  --------
+sec:
+points    stamp -> 1659611141
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 224224806
+image_msg stamp -> 208656124
+--------  263  --------
+sec:
+points    stamp -> 1659611141
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 324365854
+image_msg stamp -> 275043365
+--------  264  --------
+sec:
+points    stamp -> 1659611141
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 424282789
+image_msg stamp -> 408408737
+--------  265  --------
+sec:
+points    stamp -> 1659611141
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 524034500
+image_msg stamp -> 475218887
+--------  266  --------
+sec:
+points    stamp -> 1659611141
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 624067783
+image_msg stamp -> 608491859
+--------  267  --------
+sec:
+points    stamp -> 1659611141
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 724016190
+image_msg stamp -> 675416641
+--------  268  --------
+sec:
+points    stamp -> 1659611141
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 824112177
+image_msg stamp -> 775157146
+--------  269  --------
+sec:
+points    stamp -> 1659611141
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 924610138
+image_msg stamp -> 875465380
+--------  270  --------
+sec:
+points    stamp -> 1659611142
+image_msg stamp -> 1659611141
+--------
+nsec:
+points    stamp -> 24665594
+image_msg stamp -> 975483350
+--------  271  --------
+sec:
+points    stamp -> 1659611142
+image_msg stamp -> 1659611142
+--------
+nsec:
+points    stamp -> 124472857
+image_msg stamp -> 75518546
+--------  272  --------
+sec:
+points    stamp -> 1659611142
+image_msg stamp -> 1659611142
+--------
+nsec:
+points    stamp -> 224360704
+image_msg stamp -> 208505695
+--------  273  --------
+sec:
+points    stamp -> 1659611142
+image_msg stamp -> 1659611142
+--------
+nsec:
+points    stamp -> 324578524
+image_msg stamp -> 275188760
+--------  274  --------
+sec:
+points    stamp -> 1659611142
+image_msg stamp -> 1659611142
+--------
+nsec:
+points    stamp -> 424303293
+image_msg stamp -> 408627233
+--------  275  --------
+sec:
+points    stamp -> 1659611142
+image_msg stamp -> 1659611142
+--------
+nsec:
+points    stamp -> 524328947
+image_msg stamp -> 475215466
+--------  276  --------
+sec:
+points    stamp -> 1659611142
+image_msg stamp -> 1659611142
+--------
+nsec:
+points    stamp -> 624366045
+image_msg stamp -> 608589704
+--------  277  --------
+sec:
+points    stamp -> 1659611142
+image_msg stamp -> 1659611142
+--------
+nsec:
+points    stamp -> 724350929
+image_msg stamp -> 675342108
+--------  278  --------
+sec:
+points    stamp -> 1659611142
+image_msg stamp -> 1659611142
+--------
+nsec:
+points    stamp -> 824105978
+image_msg stamp -> 775483404
+--------  279  --------
+sec:
+points    stamp -> 1659611142
+image_msg stamp -> 1659611142
+--------
+nsec:
+points    stamp -> 924057484
+image_msg stamp -> 875489262
+--------  280  --------
+sec:
+points    stamp -> 1659611143
+image_msg stamp -> 1659611142
+--------
+nsec:
+points    stamp -> 23997068
+image_msg stamp -> 975595808
+--------  281  --------
+sec:
+points    stamp -> 1659611143
+image_msg stamp -> 1659611143
+--------
+nsec:
+points    stamp -> 124202490
+image_msg stamp -> 75561050
+--------  282  --------
+sec:
+points    stamp -> 1659611143
+image_msg stamp -> 1659611143
+--------
+nsec:
+points    stamp -> 223940134
+image_msg stamp -> 175660595
+--------  283  --------
+sec:
+points    stamp -> 1659611143
+image_msg stamp -> 1659611143
+--------
+nsec:
+points    stamp -> 324060440
+image_msg stamp -> 308688553
+--------  284  --------
+sec:
+points    stamp -> 1659611143
+image_msg stamp -> 1659611143
+--------
+nsec:
+points    stamp -> 423825741
+image_msg stamp -> 375489249
+--------  285  --------
+sec:
+points    stamp -> 1659611143
+image_msg stamp -> 1659611143
+--------
+nsec:
+points    stamp -> 523732901
+image_msg stamp -> 508728280
+--------  286  --------
+sec:
+points    stamp -> 1659611143
+image_msg stamp -> 1659611143
+--------
+nsec:
+points    stamp -> 623731375
+image_msg stamp -> 608768812
+--------  287  --------
+sec:
+points    stamp -> 1659611143
+image_msg stamp -> 1659611143
+--------
+nsec:
+points    stamp -> 723769188
+image_msg stamp -> 708855424
+--------  288  --------
+sec:
+points    stamp -> 1659611143
+image_msg stamp -> 1659611143
+--------
+nsec:
+points    stamp -> 823575497
+image_msg stamp -> 775472446
+--------  289  --------
+sec:
+points    stamp -> 1659611143
+image_msg stamp -> 1659611143
+--------
+nsec:
+points    stamp -> 923587561
+image_msg stamp -> 909081445
+--------  290  --------
+sec:
+points    stamp -> 1659611144
+image_msg stamp -> 1659611143
+--------
+nsec:
+points    stamp -> 23647070
+image_msg stamp -> 975601612
+--------  291  --------
+sec:
+points    stamp -> 1659611144
+image_msg stamp -> 1659611144
+--------
+nsec:
+points    stamp -> 124140978
+image_msg stamp -> 108939787
+--------  292  --------
+sec:
+points    stamp -> 1659611144
+image_msg stamp -> 1659611144
+--------
+nsec:
+points    stamp -> 224135637
+image_msg stamp -> 175520472
+--------  293  --------
+sec:
+points    stamp -> 1659611144
+image_msg stamp -> 1659611144
+--------
+nsec:
+points    stamp -> 324246645
+image_msg stamp -> 275537071
+--------  294  --------
+sec:
+points    stamp -> 1659611144
+image_msg stamp -> 1659611144
+--------
+nsec:
+points    stamp -> 423972607
+image_msg stamp -> 375681414
+--------  295  --------
+sec:
+points    stamp -> 1659611144
+image_msg stamp -> 1659611144
+--------
+nsec:
+points    stamp -> 523994207
+image_msg stamp -> 475572184
+--------  296  --------
+sec:
+points    stamp -> 1659611144
+image_msg stamp -> 1659611144
+--------
+nsec:
+points    stamp -> 623876095
+image_msg stamp -> 575580270
+--------  297  --------
+sec:
+points    stamp -> 1659611144
+image_msg stamp -> 1659611144
+--------
+nsec:
+points    stamp -> 723940849
+image_msg stamp -> 675902588
+--------  298  --------
+sec:
+points    stamp -> 1659611144
+image_msg stamp -> 1659611144
+--------
+nsec:
+points    stamp -> 823817730
+image_msg stamp -> 809111880
+--------  299  --------
+sec:
+points    stamp -> 1659611144
+image_msg stamp -> 1659611144
+--------
+nsec:
+points    stamp -> 923698664
+image_msg stamp -> 908978186
+--------  300  --------
+sec:
+points    stamp -> 1659611145
+image_msg stamp -> 1659611145
+--------
+nsec:
+points    stamp -> 23671865
+image_msg stamp -> 9120584
+--------  301  --------
+sec:
+points    stamp -> 1659611145
+image_msg stamp -> 1659611145
+--------
+nsec:
+points    stamp -> 123669147
+image_msg stamp -> 109261149
+--------  302  --------
+sec:
+points    stamp -> 1659611145
+image_msg stamp -> 1659611145
+--------
+nsec:
+points    stamp -> 223555326
+image_msg stamp -> 209079538
+--------  303  --------
+sec:
+points    stamp -> 1659611145
+image_msg stamp -> 1659611145
+--------
+nsec:
+points    stamp -> 323528051
+image_msg stamp -> 309100283
+--------  304  --------
+sec:
+points    stamp -> 1659611145
+image_msg stamp -> 1659611145
+--------
+nsec:
+points    stamp -> 423512459
+image_msg stamp -> 409286688
+--------  305  --------
+sec:
+points    stamp -> 1659611145
+image_msg stamp -> 1659611145
+--------
+nsec:
+points    stamp -> 523488760
+image_msg stamp -> 475760958
+--------  306  --------
+sec:
+points    stamp -> 1659611145
+image_msg stamp -> 1659611145
+--------
+nsec:
+points    stamp -> 624044895
+image_msg stamp -> 609360890
+--------  307  --------
+sec:
+points    stamp -> 1659611145
+image_msg stamp -> 1659611145
+--------
+nsec:
+points    stamp -> 724159956
+image_msg stamp -> 675836134
+--------  308  --------
+sec:
+points    stamp -> 1659611145
+image_msg stamp -> 1659611145
+--------
+nsec:
+points    stamp -> 824028969
+image_msg stamp -> 775914562
+--------  309  --------
+sec:
+points    stamp -> 1659611145
+image_msg stamp -> 1659611145
+--------
+nsec:
+points    stamp -> 923949242
+image_msg stamp -> 876092837
+--------  310  --------
+sec:
+points    stamp -> 1659611146
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 28635025
+image_msg stamp -> 9496125
+--------  311  --------
+sec:
+points    stamp -> 1659611146
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 123864412
+image_msg stamp -> 109338764
+--------  312  --------
+sec:
+points    stamp -> 1659611146
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 223826885
+image_msg stamp -> 176265980
+--------  313  --------
+sec:
+points    stamp -> 1659611146
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 323773623
+image_msg stamp -> 275948495
+--------  314  --------
+sec:
+points    stamp -> 1659611146
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 423726559
+image_msg stamp -> 376130883
+--------  315  --------
+sec:
+points    stamp -> 1659611146
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 524466753
+image_msg stamp -> 476176054
+--------  316  --------
+sec:
+points    stamp -> 1659611146
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 624329567
+image_msg stamp -> 609527512
+--------  317  --------
+sec:
+points    stamp -> 1659611146
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 724216223
+image_msg stamp -> 676117425
+--------  318  --------
+sec:
+points    stamp -> 1659611146
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 824128866
+image_msg stamp -> 776361708
+--------  319  --------
+sec:
+points    stamp -> 1659611146
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 924148560
+image_msg stamp -> 876183654
+--------  320  --------
+sec:
+points    stamp -> 1659611147
+image_msg stamp -> 1659611146
+--------
+nsec:
+points    stamp -> 24076939
+image_msg stamp -> 976219881
+--------  321  --------
+sec:
+points    stamp -> 1659611147
+image_msg stamp -> 1659611147
+--------
+nsec:
+points    stamp -> 124053478
+image_msg stamp -> 109544394
+--------  322  --------
+sec:
+points    stamp -> 1659611147
+image_msg stamp -> 1659611147
+--------
+nsec:
+points    stamp -> 223972321
+image_msg stamp -> 176377475
+--------  323  --------
+sec:
+points    stamp -> 1659611147
+image_msg stamp -> 1659611147
+--------
+nsec:
+points    stamp -> 323956251
+image_msg stamp -> 276254651
+--------  324  --------
+sec:
+points    stamp -> 1659611147
+image_msg stamp -> 1659611147
+--------
+nsec:
+points    stamp -> 423870325
+image_msg stamp -> 376402367
+--------  325  --------
+sec:
+points    stamp -> 1659611147
+image_msg stamp -> 1659611147
+--------
+nsec:
+points    stamp -> 524494171
+image_msg stamp -> 509481954
+--------  326  --------
+sec:
+points    stamp -> 1659611147
+image_msg stamp -> 1659611147
+--------
+nsec:
+points    stamp -> 624468327
+image_msg stamp -> 576154912
+--------  327  --------
+sec:
+points    stamp -> 1659611147
+image_msg stamp -> 1659611147
+--------
+nsec:
+points    stamp -> 724557161
+image_msg stamp -> 676178674
+--------  328  --------
+sec:
+points    stamp -> 1659611147
+image_msg stamp -> 1659611147
+--------
+nsec:
+points    stamp -> 824400187
+image_msg stamp -> 776171537
+--------  329  --------
+sec:
+points    stamp -> 1659611147
+image_msg stamp -> 1659611147
+--------
+nsec:
+points    stamp -> 924326897
+image_msg stamp -> 876209636
+--------  330  --------
+sec:
+points    stamp -> 1659611148
+image_msg stamp -> 1659611147
+--------
+nsec:
+points    stamp -> 24264336
+image_msg stamp -> 976235579
+--------  331  --------
+sec:
+points    stamp -> 1659611148
+image_msg stamp -> 1659611148
+--------
+nsec:
+points    stamp -> 124284744
+image_msg stamp -> 109783267
+--------  332  --------
+sec:
+points    stamp -> 1659611148
+image_msg stamp -> 1659611148
+--------
+nsec:
+points    stamp -> 224184275
+image_msg stamp -> 176362908
+--------  333  --------
+sec:
+points    stamp -> 1659611148
+image_msg stamp -> 1659611148
+--------
+nsec:
+points    stamp -> 324356318
+image_msg stamp -> 276307048
+--------  334  --------
+sec:
+points    stamp -> 1659611148
+image_msg stamp -> 1659611148
+--------
+nsec:
+points    stamp -> 424242496
+image_msg stamp -> 376586444
+--------  335  --------
+sec:
+points    stamp -> 1659611148
+image_msg stamp -> 1659611148
+--------
+nsec:
+points    stamp -> 524082899
+image_msg stamp -> 476316911
+--------  336  --------
+sec:
+points    stamp -> 1659611148
+image_msg stamp -> 1659611148
+--------
+nsec:
+points    stamp -> 623984575
+image_msg stamp -> 576488251
+--------  337  --------
+sec:
+points    stamp -> 1659611148
+image_msg stamp -> 1659611148
+--------
+nsec:
+points    stamp -> 723943472
+image_msg stamp -> 676334175
+--------  338  --------
+sec:
+points    stamp -> 1659611148
+image_msg stamp -> 1659611148
+--------
+nsec:
+points    stamp -> 823864460
+image_msg stamp -> 776353280
+--------  339  --------
+sec:
+points    stamp -> 1659611148
+image_msg stamp -> 1659611148
+--------
+nsec:
+points    stamp -> 923978329
+image_msg stamp -> 876492837
+--------  340  --------
+sec:
+points    stamp -> 1659611149
+image_msg stamp -> 1659611148
+--------
+nsec:
+points    stamp -> 24475574
+image_msg stamp -> 976760653
+--------  341  --------
+sec:
+points    stamp -> 1659611149
+image_msg stamp -> 1659611149
+--------
+nsec:
+points    stamp -> 124423265
+image_msg stamp -> 76779654
+--------  342  --------
+sec:
+points    stamp -> 1659611149
+image_msg stamp -> 1659611149
+--------
+nsec:
+points    stamp -> 224347591
+image_msg stamp -> 176441123
+--------  343  --------
+sec:
+points    stamp -> 1659611149
+image_msg stamp -> 1659611149
+--------
+nsec:
+points    stamp -> 324302197
+image_msg stamp -> 276770682
+--------  344  --------
+sec:
+points    stamp -> 1659611149
+image_msg stamp -> 1659611149
+--------
+nsec:
+points    stamp -> 424308300
+image_msg stamp -> 376480731
+--------  345  --------
+sec:
+points    stamp -> 1659611149
+image_msg stamp -> 1659611149
+--------
+nsec:
+points    stamp -> 524407387
+image_msg stamp -> 476767020
+--------  346  --------
+sec:
+points    stamp -> 1659611149
+image_msg stamp -> 1659611149
+--------
+nsec:
+points    stamp -> 624366045
+image_msg stamp -> 576599101
+--------  347  --------
+sec:
+points    stamp -> 1659611149
+image_msg stamp -> 1659611149
+--------
+nsec:
+points    stamp -> 724124432
+image_msg stamp -> 676528584
+--------  348  --------
+sec:
+points    stamp -> 1659611149
+image_msg stamp -> 1659611149
+--------
+nsec:
+points    stamp -> 824082851
+image_msg stamp -> 809875999
+--------  349  --------
+sec:
+points    stamp -> 1659611149
+image_msg stamp -> 1659611149
+--------
+nsec:
+points    stamp -> 924017906
+image_msg stamp -> 876568370
+--------  350  --------
+sec:
+points    stamp -> 1659611150
+image_msg stamp -> 1659611149
+--------
+nsec:
+points    stamp -> 23988962
+image_msg stamp -> 976615957
+--------  351  --------
+sec:
+points    stamp -> 1659611150
+image_msg stamp -> 1659611150
+--------
+nsec:
+points    stamp -> 123940706
+image_msg stamp -> 76669958
+--------  352  --------
+sec:
+points    stamp -> 1659611150
+image_msg stamp -> 1659611150
+--------
+nsec:
+points    stamp -> 224534035
+image_msg stamp -> 176642533
+--------  353  --------
+sec:
+points    stamp -> 1659611150
+image_msg stamp -> 1659611150
+--------
+nsec:
+points    stamp -> 324506044
+image_msg stamp -> 276673359
+--------  354  --------
+sec:
+points    stamp -> 1659611150
+image_msg stamp -> 1659611150
+--------
+nsec:
+points    stamp -> 424469709
+image_msg stamp -> 376720233
+--------  355  --------
+sec:
+points    stamp -> 1659611150
+image_msg stamp -> 1659611150
+--------
+nsec:
+points    stamp -> 524404764
+image_msg stamp -> 510066217
+--------  356  --------
+sec:
+points    stamp -> 1659611150
+image_msg stamp -> 1659611150
+--------
+nsec:
+points    stamp -> 624361753
+image_msg stamp -> 576744587
+--------  357  --------
+sec:
+points    stamp -> 1659611150
+image_msg stamp -> 1659611150
+--------
+nsec:
+points    stamp -> 724364042
+image_msg stamp -> 676762310
+--------  358  --------
+sec:
+points    stamp -> 1659611150
+image_msg stamp -> 1659611150
+--------
+nsec:
+points    stamp -> 824248075
+image_msg stamp -> 776984883
+--------  359  --------
+sec:
+points    stamp -> 1659611150
+image_msg stamp -> 1659611150
+--------
+nsec:
+points    stamp -> 924207687
+image_msg stamp -> 876732991
+--------  360  --------
+sec:
+points    stamp -> 1659611151
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 24274588
+image_msg stamp -> 10124392
+--------  361  --------
+sec:
+points    stamp -> 1659611151
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 124137163
+image_msg stamp -> 77037178
+--------  362  --------
+sec:
+points    stamp -> 1659611151
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 224807262
+image_msg stamp -> 176829178
+--------  363  --------
+sec:
+points    stamp -> 1659611151
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 324706078
+image_msg stamp -> 277165073
+--------  364  --------
+sec:
+points    stamp -> 1659611151
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 424594641
+image_msg stamp -> 410269348
+--------  365  --------
+sec:
+points    stamp -> 1659611151
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 524766445
+image_msg stamp -> 510175349
+--------  366  --------
+sec:
+points    stamp -> 1659611151
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 624538183
+image_msg stamp -> 577000391
+--------  367  --------
+sec:
+points    stamp -> 1659611151
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 724501133
+image_msg stamp -> 676981716
+--------  368  --------
+sec:
+points    stamp -> 1659611151
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 824590921
+image_msg stamp -> 777128520
+--------  369  --------
+sec:
+points    stamp -> 1659611151
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 924486399
+image_msg stamp -> 876969950
+--------  370  --------
+sec:
+points    stamp -> 1659611152
+image_msg stamp -> 1659611151
+--------
+nsec:
+points    stamp -> 24374247
+image_msg stamp -> 977022854
+--------  371  --------
+sec:
+points    stamp -> 1659611152
+image_msg stamp -> 1659611152
+--------
+nsec:
+points    stamp -> 124334335
+image_msg stamp -> 76970788
+--------  372  --------
+sec:
+points    stamp -> 1659611152
+image_msg stamp -> 1659611152
+--------
+nsec:
+points    stamp -> 224256516
+image_msg stamp -> 177085388
+--------  373  --------
+sec:
+points    stamp -> 1659611152
+image_msg stamp -> 1659611152
+--------
+nsec:
+points    stamp -> 324162245
+image_msg stamp -> 277036314
+--------  374  --------
+sec:
+points    stamp -> 1659611152
+image_msg stamp -> 1659611152
+--------
+nsec:
+points    stamp -> 424124479
+image_msg stamp -> 377319873
+--------  375  --------
+sec:
+points    stamp -> 1659611152
+image_msg stamp -> 1659611152
+--------
+nsec:
+points    stamp -> 524113894
+image_msg stamp -> 477176144
+--------  376  --------
+sec:
+points    stamp -> 1659611152
+image_msg stamp -> 1659611152
+--------
+nsec:
+points    stamp -> 624064922
+image_msg stamp -> 577219934
+--------  377  --------
+sec:
+points    stamp -> 1659611152
+image_msg stamp -> 1659611152
+--------
+nsec:
+points    stamp -> 724024296
+image_msg stamp -> 677111888
+--------  378  --------
+sec:
+points    stamp -> 1659611152
+image_msg stamp -> 1659611152
+--------
+nsec:
+points    stamp -> 823986292
+image_msg stamp -> 777353869
+--------  379  --------
+sec:
+points    stamp -> 1659611152
+image_msg stamp -> 1659611152
+--------
+nsec:
+points    stamp -> 924757957
+image_msg stamp -> 910472866
+--------  380  --------
+sec:
+points    stamp -> 1659611153
+image_msg stamp -> 1659611152
+--------
+nsec:
+points    stamp -> 24694681
+image_msg stamp -> 977085587
+--------  381  --------
+sec:
+points    stamp -> 1659611153
+image_msg stamp -> 1659611153
+--------
+nsec:
+points    stamp -> 124468803
+image_msg stamp -> 77193176
+--------  382  --------
+sec:
+points    stamp -> 1659611153
+image_msg stamp -> 1659611153
+--------
+nsec:
+points    stamp -> 224630833
+image_msg stamp -> 177500332
+--------  383  --------
+sec:
+points    stamp -> 1659611153
+image_msg stamp -> 1659611153
+--------
+nsec:
+points    stamp -> 324553967
+image_msg stamp -> 277449329
+--------  384  --------
+sec:
+points    stamp -> 1659611153
+image_msg stamp -> 1659611153
+--------
+nsec:
+points    stamp -> 424340487
+image_msg stamp -> 377405934
+--------  385  --------
+sec:
+points    stamp -> 1659611153
+image_msg stamp -> 1659611153
+--------
+nsec:
+points    stamp -> 524279118
+image_msg stamp -> 477446190
+--------  386  --------
+sec:
+points    stamp -> 1659611153
+image_msg stamp -> 1659611153
+--------
+nsec:
+points    stamp -> 624239445
+image_msg stamp -> 577399664
+--------  387  --------
+sec:
+points    stamp -> 1659611153
+image_msg stamp -> 1659611153
+--------
+nsec:
+points    stamp -> 724260092
+image_msg stamp -> 677238814
+--------  388  --------
+sec:
+points    stamp -> 1659611153
+image_msg stamp -> 1659611153
+--------
+nsec:
+points    stamp -> 824382305
+image_msg stamp -> 777271670
+--------  389  --------
+sec:
+points    stamp -> 1659611153
+image_msg stamp -> 1659611153
+--------
+nsec:
+points    stamp -> 924093723
+image_msg stamp -> 877464604
+--------  390  --------
+sec:
+points    stamp -> 1659611154
+image_msg stamp -> 1659611153
+--------
+nsec:
+points    stamp -> 24067640
+image_msg stamp -> 977555453
+--------  391  --------
+sec:
+points    stamp -> 1659611154
+image_msg stamp -> 1659611154
+--------
+nsec:
+points    stamp -> 124032497
+image_msg stamp -> 77321771
+--------  392  --------
+sec:
+points    stamp -> 1659611154
+image_msg stamp -> 1659611154
+--------
+nsec:
+points    stamp -> 224007845
+image_msg stamp -> 177471956
+--------  393  --------
+sec:
+points    stamp -> 1659611154
+image_msg stamp -> 1659611154
+--------
+nsec:
+points    stamp -> 324566126
+image_msg stamp -> 277374700
+--------  394  --------
+sec:
+points    stamp -> 1659611154
+image_msg stamp -> 1659611154
+--------
+nsec:
+points    stamp -> 424671888
+image_msg stamp -> 411021570
+--------  395  --------
+sec:
+points    stamp -> 1659611154
+image_msg stamp -> 1659611154
+--------
+nsec:
+points    stamp -> 524689913
+image_msg stamp -> 510767046
+--------  396  --------
+sec:
+points    stamp -> 1659611154
+image_msg stamp -> 1659611154
+--------
+nsec:
+points    stamp -> 624531984
+image_msg stamp -> 577667465
+--------  397  --------
+sec:
+points    stamp -> 1659611154
+image_msg stamp -> 1659611154
+--------
+nsec:
+points    stamp -> 724434614
+image_msg stamp -> 677448551
+--------  398  --------
+sec:
+points    stamp -> 1659611154
+image_msg stamp -> 1659611154
+--------
+nsec:
+points    stamp -> 824418545
+image_msg stamp -> 777788959
+--------  399  --------
+sec:
+points    stamp -> 1659611154
+image_msg stamp -> 1659611154
+--------
+nsec:
+points    stamp -> 924523354
+image_msg stamp -> 910849169
+--------  400  --------
+sec:
+points    stamp -> 1659611155
+image_msg stamp -> 1659611154
+--------
+nsec:
+points    stamp -> 24237394
+image_msg stamp -> 977581323
+--------  401  --------
+sec:
+points    stamp -> 1659611155
+image_msg stamp -> 1659611155
+--------
+nsec:
+points    stamp -> 124225140
+image_msg stamp -> 77741306
+--------  402  --------
+sec:
+points    stamp -> 1659611155
+image_msg stamp -> 1659611155
+--------
+nsec:
+points    stamp -> 224193335
+image_msg stamp -> 177733784
+--------  403  --------
+sec:
+points    stamp -> 1659611155
+image_msg stamp -> 1659611155
+--------
+nsec:
+points    stamp -> 324198246
+image_msg stamp -> 277671398
+--------  404  --------
+sec:
+points    stamp -> 1659611155
+image_msg stamp -> 1659611155
+--------
+nsec:
+points    stamp -> 424093723
+image_msg stamp -> 377897334
+--------  405  --------
+sec:
+points    stamp -> 1659611155
+image_msg stamp -> 1659611155
+--------
+nsec:
+points    stamp -> 524658442
+image_msg stamp -> 477757472
+--------  406  --------
+sec:
+points    stamp -> 1659611155
+image_msg stamp -> 1659611155
+--------
+nsec:
+points    stamp -> 624845982
+image_msg stamp -> 577807023
+--------  407  --------
+sec:
+points    stamp -> 1659611155
+image_msg stamp -> 1659611155
+--------
+nsec:
+points    stamp -> 724605799
+image_msg stamp -> 677931290
+--------  408  --------
+sec:
+points    stamp -> 1659611155
+image_msg stamp -> 1659611155
+--------
+nsec:
+points    stamp -> 824615479
+image_msg stamp -> 811211726
+--------  409  --------
+sec:
+points    stamp -> 1659611155
+image_msg stamp -> 1659611155
+--------
+nsec:
+points    stamp -> 924513340
+image_msg stamp -> 877641091
+--------  410  --------
+sec:
+points    stamp -> 1659611156
+image_msg stamp -> 1659611155
+--------
+nsec:
+points    stamp -> 24477959
+image_msg stamp -> 977674860
+--------  411  --------
+sec:
+points    stamp -> 1659611156
+image_msg stamp -> 1659611156
+--------
+nsec:
+points    stamp -> 124414206
+image_msg stamp -> 77696235
+--------  412  --------
+sec:
+points    stamp -> 1659611156
+image_msg stamp -> 1659611156
+--------
+nsec:
+points    stamp -> 224344969
+image_msg stamp -> 177903715
+--------  413  --------
+sec:
+points    stamp -> 1659611156
+image_msg stamp -> 1659611156
+--------
+nsec:
+points    stamp -> 324328423
+image_msg stamp -> 277781810
+--------  414  --------
+sec:
+points    stamp -> 1659611156
+image_msg stamp -> 1659611156
+--------
+nsec:
+points    stamp -> 424253941
+image_msg stamp -> 377794090
+--------  415  --------
+sec:
+points    stamp -> 1659611156
+image_msg stamp -> 1659611156
+--------
+nsec:
+points    stamp -> 524221659
+image_msg stamp -> 477831659
+--------  416  --------
+sec:
+points    stamp -> 1659611156
+image_msg stamp -> 1659611156
+--------
+nsec:
+points    stamp -> 624170065
+image_msg stamp -> 611139120
+--------  417  --------
+sec:
+points    stamp -> 1659611156
+image_msg stamp -> 1659611156
+--------
+nsec:
+points    stamp -> 724122524
+image_msg stamp -> 677867978
+--------  418  --------
+sec:
+points    stamp -> 1659611156
+image_msg stamp -> 1659611156
+--------
+nsec:
+points    stamp -> 824081421
+image_msg stamp -> 777851703
+--------  419  --------
+sec:
+points    stamp -> 1659611156
+image_msg stamp -> 1659611156
+--------
+nsec:
+points    stamp -> 924810410
+image_msg stamp -> 911129773
+--------  420  --------
+sec:
+points    stamp -> 1659611157
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 24643183
+image_msg stamp -> 11298866
+--------  421  --------
+sec:
+points    stamp -> 1659611157
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 124654055
+image_msg stamp -> 77883871
+--------  422  --------
+sec:
+points    stamp -> 1659611157
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 224606752
+image_msg stamp -> 177984373
+--------  423  --------
+sec:
+points    stamp -> 1659611157
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 324529648
+image_msg stamp -> 277925725
+--------  424  --------
+sec:
+points    stamp -> 1659611157
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 424456358
+image_msg stamp -> 377969898
+--------  425  --------
+sec:
+points    stamp -> 1659611157
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 524375916
+image_msg stamp -> 477936741
+--------  426  --------
+sec:
+points    stamp -> 1659611157
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 624319077
+image_msg stamp -> 577974887
+--------  427  --------
+sec:
+points    stamp -> 1659611157
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 724292755
+image_msg stamp -> 678125686
+--------  428  --------
+sec:
+points    stamp -> 1659611157
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 824255943
+image_msg stamp -> 778014205
+--------  429  --------
+sec:
+points    stamp -> 1659611157
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 924220085
+image_msg stamp -> 878206477
+--------  430  --------
+sec:
+points    stamp -> 1659611158
+image_msg stamp -> 1659611157
+--------
+nsec:
+points    stamp -> 24164200
+image_msg stamp -> 978078925
+--------  431  --------
+sec:
+points    stamp -> 1659611158
+image_msg stamp -> 1659611158
+--------
+nsec:
+points    stamp -> 124106407
+image_msg stamp -> 78104895
+--------  432  --------
+sec:
+points    stamp -> 1659611158
+image_msg stamp -> 1659611158
+--------
+nsec:
+points    stamp -> 224079609
+image_msg stamp -> 178252190
+--------  433  --------
+sec:
+points    stamp -> 1659611158
+image_msg stamp -> 1659611158
+--------
+nsec:
+points    stamp -> 324717999
+image_msg stamp -> 278364199
+--------  434  --------
+sec:
+points    stamp -> 1659611158
+image_msg stamp -> 1659611158
+--------
+nsec:
+points    stamp -> 424610138
+image_msg stamp -> 411481384
+--------  435  --------
+sec:
+points    stamp -> 1659611158
+image_msg stamp -> 1659611158
+--------
+nsec:
+points    stamp -> 524613142
+image_msg stamp -> 478168717
+--------  436  --------
+sec:
+points    stamp -> 1659611158
+image_msg stamp -> 1659611158
+--------
+nsec:
+points    stamp -> 624569654
+image_msg stamp -> 578129746
+--------  437  --------
+sec:
+points    stamp -> 1659611158
+image_msg stamp -> 1659611158
+--------
+nsec:
+points    stamp -> 724537373
+image_msg stamp -> 678457764
+--------  438  --------
+sec:
+points    stamp -> 1659611158
+image_msg stamp -> 1659611158
+--------
+nsec:
+points    stamp -> 823769569
+image_msg stamp -> 778212301
+--------  439  --------
+sec:
+points    stamp -> 1659611158
+image_msg stamp -> 1659611158
+--------
+nsec:
+points    stamp -> 924424887
+image_msg stamp -> 911522837
+--------  440  --------
+sec:
+points    stamp -> 1659611159
+image_msg stamp -> 1659611158
+--------
+nsec:
+points    stamp -> 24339437
+image_msg stamp -> 978218774
+--------  441  --------
+sec:
+points    stamp -> 1659611159
+image_msg stamp -> 1659611159
+--------
+nsec:
+points    stamp -> 124328136
+image_msg stamp -> 111578617
+--------  442  --------
+sec:
+points    stamp -> 1659611159
+image_msg stamp -> 1659611159
+--------
+nsec:
+points    stamp -> 224280119
+image_msg stamp -> 178345400
+--------  443  --------
+sec:
+points    stamp -> 1659611159
+image_msg stamp -> 1659611159
+--------
+nsec:
+points    stamp -> 324866295
+image_msg stamp -> 278368064
+--------  444  --------
+sec:
+points    stamp -> 1659611159
+image_msg stamp -> 1659611159
+--------
+nsec:
+points    stamp -> 424830675
+image_msg stamp -> 378265376
+--------  445  --------
+sec:
+points    stamp -> 1659611159
+image_msg stamp -> 1659611159
+--------
+nsec:
+points    stamp -> 524734259
+image_msg stamp -> 478476424
+--------  446  --------
+sec:
+points    stamp -> 1659611159
+image_msg stamp -> 1659611159
+--------
+nsec:
+points    stamp -> 624747992
+image_msg stamp -> 578347971
+--------  447  --------
+sec:
+points    stamp -> 1659611159
+image_msg stamp -> 1659611159
+--------
+nsec:
+points    stamp -> 724036455
+image_msg stamp -> 678438689
+--------  448  --------
+sec:
+points    stamp -> 1659611159
+image_msg stamp -> 1659611159
+--------
+nsec:
+points    stamp -> 823994637
+image_msg stamp -> 778356867
+--------  449  --------
+sec:
+points    stamp -> 1659611159
+image_msg stamp -> 1659611159
+--------
+nsec:
+points    stamp -> 923900127
+image_msg stamp -> 878376915
+--------  450  --------
+sec:
+points    stamp -> 1659611160
+image_msg stamp -> 1659611159
+--------
+nsec:
+points    stamp -> 24561882
+image_msg stamp -> 978437710
+--------  451  --------
+sec:
+points    stamp -> 1659611160
+image_msg stamp -> 1659611160
+--------
+nsec:
+points    stamp -> 124493837
+image_msg stamp -> 78447150
+--------  452  --------
+sec:
+points    stamp -> 1659611160
+image_msg stamp -> 1659611160
+--------
+nsec:
+points    stamp -> 224446535
+image_msg stamp -> 178612951
+--------  453  --------
+sec:
+points    stamp -> 1659611160
+image_msg stamp -> 1659611160
+--------
+nsec:
+points    stamp -> 324362755
+image_msg stamp -> 278519542
+--------  454  --------
+sec:
+points    stamp -> 1659611160
+image_msg stamp -> 1659611160
+--------
+nsec:
+points    stamp -> 424390316
+image_msg stamp -> 378503614
+--------  455  --------
+sec:
+points    stamp -> 1659611160
+image_msg stamp -> 1659611160
+--------
+nsec:
+points    stamp -> 524288416
+image_msg stamp -> 511837232
+--------  456  --------
+sec:
+points    stamp -> 1659611160
+image_msg stamp -> 1659611160
+--------
+nsec:
+points    stamp -> 624298573
+image_msg stamp -> 578737473
+--------  457  --------
+sec:
+points    stamp -> 1659611160
+image_msg stamp -> 1659611160
+--------
+nsec:
+points    stamp -> 724833965
+image_msg stamp -> 711908105
+--------  458  --------
+sec:
+points    stamp -> 1659611160
+image_msg stamp -> 1659611160
+--------
+nsec:
+points    stamp -> 824781895
+image_msg stamp -> 778539608
+--------  459  --------
+sec:
+points    stamp -> 1659611160
+image_msg stamp -> 1659611160
+--------
+nsec:
+points    stamp -> 924803257
+image_msg stamp -> 878720284
+--------  460  --------
+sec:
+points    stamp -> 1659611161
+image_msg stamp -> 1659611160
+--------
+nsec:
+points    stamp -> 24758339
+image_msg stamp -> 978685619
+--------  461  --------
+sec:
+points    stamp -> 1659611161
+image_msg stamp -> 1659611161
+--------
+nsec:
+points    stamp -> 124722958
+image_msg stamp -> 78563588
+--------  462  --------
+sec:
+points    stamp -> 1659611161
+image_msg stamp -> 1659611161
+--------
+nsec:
+points    stamp -> 224599361
+image_msg stamp -> 178905243
+--------  463  --------
+sec:
+points    stamp -> 1659611161
+image_msg stamp -> 1659611161
+--------
+nsec:
+points    stamp -> 324590445
+image_msg stamp -> 311993744
+--------  464  --------
+sec:
+points    stamp -> 1659611161
+image_msg stamp -> 1659611161
+--------
+nsec:
+points    stamp -> 424548864
+image_msg stamp -> 378730009
+--------  465  --------
+sec:
+points    stamp -> 1659611161
+image_msg stamp -> 1659611161
+--------
+nsec:
+points    stamp -> 523825169
+image_msg stamp -> 498564478
+--------  466  --------
+sec:
+points    stamp -> 1659611161
+image_msg stamp -> 1659611161
+--------
+nsec:
+points    stamp -> 624434948
+image_msg stamp -> 578961676
+--------  467  --------
+sec:
+points    stamp -> 1659611161
+image_msg stamp -> 1659611161
+--------
+nsec:
+points    stamp -> 724387884
+image_msg stamp -> 678804545
+--------  468  --------
+sec:
+points    stamp -> 1659611161
+image_msg stamp -> 1659611161
+--------
+nsec:
+points    stamp -> 824342966
+image_msg stamp -> 778763368
+--------  469  --------
+sec:
+points    stamp -> 1659611161
+image_msg stamp -> 1659611161
+--------
+nsec:
+points    stamp -> 924990654
+image_msg stamp -> 878725040
+--------  470  --------
+sec:
+points    stamp -> 1659611162
+image_msg stamp -> 1659611161
+--------
+nsec:
+points    stamp -> 24885178
+image_msg stamp -> 978778219
+--------  471  --------
+sec:
+points    stamp -> 1659611162
+image_msg stamp -> 1659611162
+--------
+nsec:
+points    stamp -> 124836683
+image_msg stamp -> 79112845
+--------  472  --------
+sec:
+points    stamp -> 1659611162
+image_msg stamp -> 1659611162
+--------
+nsec:
+points    stamp -> 224810839
+image_msg stamp -> 178818824
+--------  473  --------
+sec:
+points    stamp -> 1659611162
+image_msg stamp -> 1659611162
+--------
+nsec:
+points    stamp -> 324088335
+image_msg stamp -> 278798337
+--------  474  --------
+sec:
+points    stamp -> 1659611162
+image_msg stamp -> 1659611162
+--------
+nsec:
+points    stamp -> 424085855
+image_msg stamp -> 378881391
+--------  475  --------
+sec:
+points    stamp -> 1659611162
+image_msg stamp -> 1659611162
+--------
+nsec:
+points    stamp -> 524003267
+image_msg stamp -> 478837223
+--------  476  --------
+sec:
+points    stamp -> 1659611162
+image_msg stamp -> 1659611162
+--------
+nsec:
+points    stamp -> 624585390
+image_msg stamp -> 578956339
+--------  477  --------
+sec:
+points    stamp -> 1659611162
+image_msg stamp -> 1659611162
+--------
+nsec:
+points    stamp -> 724578142
+image_msg stamp -> 712206211
+--------  478  --------
+sec:
+points    stamp -> 1659611162
+image_msg stamp -> 1659611162
+--------
+nsec:
+points    stamp -> 824562073
+image_msg stamp -> 778933979
+--------  479  --------
+sec:
+points    stamp -> 1659611162
+image_msg stamp -> 1659611162
+--------
+nsec:
+points    stamp -> 924409151
+image_msg stamp -> 878934014
+--------  480  --------
+sec:
+points    stamp -> 1659611163
+image_msg stamp -> 1659611162
+--------
+nsec:
+points    stamp -> 24439812
+image_msg stamp -> 978947915
+--------  481  --------
+sec:
+points    stamp -> 1659611163
+image_msg stamp -> 1659611163
+--------
+nsec:
+points    stamp -> 124386549
+image_msg stamp -> 112331740
+--------  482  --------
+sec:
+points    stamp -> 1659611163
+image_msg stamp -> 1659611163
+--------
+nsec:
+points    stamp -> 224337101
+image_msg stamp -> 178960173
+--------  483  --------
+sec:
+points    stamp -> 1659611163
+image_msg stamp -> 1659611163
+--------
+nsec:
+points    stamp -> 324300051
+image_msg stamp -> 279231804
+--------  484  --------
+sec:
+points    stamp -> 1659611163
+image_msg stamp -> 1659611163
+--------
+nsec:
+points    stamp -> 424240828
+image_msg stamp -> 379302075
+--------  485  --------
+sec:
+points    stamp -> 1659611163
+image_msg stamp -> 1659611163
+--------
+nsec:
+points    stamp -> 524133682
+image_msg stamp -> 479039513
+--------  486  --------
+sec:
+points    stamp -> 1659611163
+image_msg stamp -> 1659611163
+--------
+nsec:
+points    stamp -> 624118567
+image_msg stamp -> 579050634
+--------  487  --------
+sec:
+points    stamp -> 1659611163
+image_msg stamp -> 1659611163
+--------
+nsec:
+points    stamp -> 724739313
+image_msg stamp -> 679104757
+--------  488  --------
+sec:
+points    stamp -> 1659611163
+image_msg stamp -> 1659611163
+--------
+nsec:
+points    stamp -> 824671984
+image_msg stamp -> 779104591
+--------  489  --------
+sec:
+points    stamp -> 1659611163
+image_msg stamp -> 1659611163
+--------
+nsec:
+points    stamp -> 924625635
+image_msg stamp -> 879075584
+--------  490  --------
+sec:
+points    stamp -> 1659611164
+image_msg stamp -> 1659611163
+--------
+nsec:
+points    stamp -> 24621487
+image_msg stamp -> 979160741
+--------  491  --------
+sec:
+points    stamp -> 1659611164
+image_msg stamp -> 1659611164
+--------
+nsec:
+points    stamp -> 124579430
+image_msg stamp -> 79207523
+--------  492  --------
+sec:
+points    stamp -> 1659611164
+image_msg stamp -> 1659611164
+--------
+nsec:
+points    stamp -> 224527836
+image_msg stamp -> 179168053
+--------  493  --------
+sec:
+points    stamp -> 1659611164
+image_msg stamp -> 1659611164
+--------
+nsec:
+points    stamp -> 324475050
+image_msg stamp -> 279212691
+--------  494  --------
+sec:
+points    stamp -> 1659611164
+image_msg stamp -> 1659611164
+--------
+nsec:
+points    stamp -> 424401045
+image_msg stamp -> 379416318
+--------  495  --------
+sec:
+points    stamp -> 1659611164
+image_msg stamp -> 1659611164
+--------
+nsec:
+points    stamp -> 524339914
+image_msg stamp -> 479199452
+--------  496  --------
+sec:
+points    stamp -> 1659611164
+image_msg stamp -> 1659611164
+--------
+nsec:
+points    stamp -> 624300003
+image_msg stamp -> 579254088
+--------  497  --------
+sec:
+points    stamp -> 1659611164
+image_msg stamp -> 1659611164
+--------
+nsec:
+points    stamp -> 724264145
+image_msg stamp -> 679450329
+--------  498  --------
+sec:
+points    stamp -> 1659611164
+image_msg stamp -> 1659611164
+--------
+nsec:
+points    stamp -> 824190140
+image_msg stamp -> 779269871
+--------  499  --------
+sec:
+points    stamp -> 1659611164
+image_msg stamp -> 1659611164
+--------
+nsec:
+points    stamp -> 924150944
+image_msg stamp -> 879389083
+--------  500  --------
+sec:
+points    stamp -> 1659611165
+image_msg stamp -> 1659611164
+--------
+nsec:
+points    stamp -> 24180412
+image_msg stamp -> 979349195
+--------  501  --------
+sec:
+points    stamp -> 1659611165
+image_msg stamp -> 1659611165
+--------
+nsec:
+points    stamp -> 124087811
+image_msg stamp -> 79346902
+--------  502  --------
+sec:
+points    stamp -> 1659611165
+image_msg stamp -> 1659611165
+--------
+nsec:
+points    stamp -> 224033594
+image_msg stamp -> 212680540
+--------  503  --------
+sec:
+points    stamp -> 1659611165
+image_msg stamp -> 1659611165
+--------
+nsec:
+points    stamp -> 323972464
+image_msg stamp -> 279435530
+--------  504  --------
+sec:
+points    stamp -> 1659611165
+image_msg stamp -> 1659611165
+--------
+nsec:
+points    stamp -> 424642801
+image_msg stamp -> 379725400
+--------  505  --------
+sec:
+points    stamp -> 1659611165
+image_msg stamp -> 1659611165
+--------
+nsec:
+points    stamp -> 524566889
+image_msg stamp -> 479350643
+--------  506  --------
+sec:
+points    stamp -> 1659611165
+image_msg stamp -> 1659611165
+--------
+nsec:
+points    stamp -> 624540567
+image_msg stamp -> 579567695
+--------  507  --------
+sec:
+points    stamp -> 1659611165
+image_msg stamp -> 1659611165
+--------
+nsec:
+points    stamp -> 724468946
+image_msg stamp -> 679670616
+--------  508  --------
+sec:
+points    stamp -> 1659611165
+image_msg stamp -> 1659611165
+--------
+nsec:
+points    stamp -> 824401379
+image_msg stamp -> 779468287
+--------  509  --------
+sec:
+points    stamp -> 1659611165
+image_msg stamp -> 1659611165
+--------
+nsec:
+points    stamp -> 924341917
+image_msg stamp -> 879452650
+--------  510  --------
+sec:
+points    stamp -> 1659611166
+image_msg stamp -> 1659611165
+--------
+nsec:
+points    stamp -> 24314404
+image_msg stamp -> 979482805
+--------  511  --------
+sec:
+points    stamp -> 1659611166
+image_msg stamp -> 1659611166
+--------
+nsec:
+points    stamp -> 124291420
+image_msg stamp -> 79682136
+--------  512  --------
+sec:
+points    stamp -> 1659611166
+image_msg stamp -> 1659611166
+--------
+nsec:
+points    stamp -> 224205494
+image_msg stamp -> 179529689
+--------  513  --------
+sec:
+points    stamp -> 1659611166
+image_msg stamp -> 1659611166
+--------
+nsec:
+points    stamp -> 324215651
+image_msg stamp -> 279631365
+--------  514  --------
+sec:
+points    stamp -> 1659611166
+image_msg stamp -> 1659611166
+--------
+nsec:
+points    stamp -> 424103498
+image_msg stamp -> 379749720
+--------  515  --------
+sec:
+points    stamp -> 1659611166
+image_msg stamp -> 1659611166
+--------
+nsec:
+points    stamp -> 524034500
+image_msg stamp -> 479604971
+--------  516  --------
+sec:
+points    stamp -> 1659611166
+image_msg stamp -> 1659611166
+--------
+nsec:
+points    stamp -> 624077082
+image_msg stamp -> 579650780
+--------  517  --------
+sec:
+points    stamp -> 1659611166
+image_msg stamp -> 1659611166
+--------
+nsec:
+points    stamp -> 724012613
+image_msg stamp -> 679872934
+--------  518  --------
+sec:
+points    stamp -> 1659611166
+image_msg stamp -> 1659611166
+--------
+nsec:
+points    stamp -> 823940277
+image_msg stamp -> 779862711
+--------  519  --------
+sec:
+points    stamp -> 1659611166
+image_msg stamp -> 1659611166
+--------
+nsec:
+points    stamp -> 924582005
+image_msg stamp -> 879695441
+--------  520  --------
+sec:
+points    stamp -> 1659611167
+image_msg stamp -> 1659611166
+--------
+nsec:
+points    stamp -> 24483442
+image_msg stamp -> 979702039
+--------  521  --------
+sec:
+points    stamp -> 1659611167
+image_msg stamp -> 1659611167
+--------
+nsec:
+points    stamp -> 125097275
+image_msg stamp -> 79686760
+--------  522  --------
+sec:
+points    stamp -> 1659611167
+image_msg stamp -> 1659611167
+--------
+nsec:
+points    stamp -> 225058317
+image_msg stamp -> 179727932
+--------  523  --------
+sec:
+points    stamp -> 1659611167
+image_msg stamp -> 1659611167
+--------
+nsec:
+points    stamp -> 325007677
+image_msg stamp -> 279705625
+--------  524  --------
+sec:
+points    stamp -> 1659611167
+image_msg stamp -> 1659611167
+--------
+nsec:
+points    stamp -> 424358845
+image_msg stamp -> 379765307
+--------  525  --------
+sec:
+points    stamp -> 1659611167
+image_msg stamp -> 1659611167
+--------
+nsec:
+points    stamp -> 524301052
+image_msg stamp -> 480056703
+--------  526  --------
+sec:
+points    stamp -> 1659611167
+image_msg stamp -> 1659611167
+--------
+nsec:
+points    stamp -> 624196053
+image_msg stamp -> 579787059
+--------  527  --------
+sec:
+points    stamp -> 1659611167
+image_msg stamp -> 1659611167
+--------
+nsec:
+points    stamp -> 724851131
+image_msg stamp -> 679880863
+--------  528  --------
+sec:
+points    stamp -> 1659611167
+image_msg stamp -> 1659611167
+--------
+nsec:
+points    stamp -> 825497150
+image_msg stamp -> 779858634
+--------  529  --------
+sec:
+points    stamp -> 1659611167
+image_msg stamp -> 1659611167
+--------
+nsec:
+points    stamp -> 926088333
+image_msg stamp -> 913417232
+--------  530  --------
+sec:
+points    stamp -> 1659611168
+image_msg stamp -> 1659611167
+--------
+nsec:
+points    stamp -> 26012897
+image_msg stamp -> 979844997
+--------  531  --------
+sec:
+points    stamp -> 1659611168
+image_msg stamp -> 1659611168
+--------
+nsec:
+points    stamp -> 125993729
+image_msg stamp -> 79946617
+--------  532  --------
+sec:
+points    stamp -> 1659611168
+image_msg stamp -> 1659611168
+--------
+nsec:
+points    stamp -> 225279808
+image_msg stamp -> 213495758
+--------  533  --------
+sec:
+points    stamp -> 1659611168
+image_msg stamp -> 1659611168
+--------
+nsec:
+points    stamp -> 323893070
+image_msg stamp -> 279936924
+--------  534  --------
+sec:
+points    stamp -> 1659611168
+image_msg stamp -> 1659611168
+--------
+nsec:
+points    stamp -> 423218966
+image_msg stamp -> 380025048
+--------  535  --------
+sec:
+points    stamp -> 1659611168
+image_msg stamp -> 1659611168
+--------
+nsec:
+points    stamp -> 524495840
+image_msg stamp -> 480290208
+--------  536  --------
+sec:
+points    stamp -> 1659611168
+image_msg stamp -> 1659611168
+--------
+nsec:
+points    stamp -> 623070240
+image_msg stamp -> 580012570
+--------  537  --------
+sec:
+points    stamp -> 1659611168
+image_msg stamp -> 1659611168
+--------
+nsec:
+points    stamp -> 723053455
+image_msg stamp -> 680165642
+--------  538  --------
+sec:
+points    stamp -> 1659611168
+image_msg stamp -> 1659611168
+--------
+nsec:
+points    stamp -> 823623180
+image_msg stamp -> 779968711
+--------  539  --------
+sec:
+points    stamp -> 1659611168
+image_msg stamp -> 1659611168
+--------
+nsec:
+points    stamp -> 924281836
+image_msg stamp -> 880250320
+--------  540  --------
+sec:
+points    stamp -> 1659611169
+image_msg stamp -> 1659611168
+--------
+nsec:
+points    stamp -> 24899721
+image_msg stamp -> 980045324
+--------  541  --------
+sec:
+points    stamp -> 1659611169
+image_msg stamp -> 1659611169
+--------
+nsec:
+points    stamp -> 125481367
+image_msg stamp -> 80087056
+--------  542  --------
+sec:
+points    stamp -> 1659611169
+image_msg stamp -> 1659611169
+--------
+nsec:
+points    stamp -> 226142883
+image_msg stamp -> 180255914
+--------  543  --------
+sec:
+points    stamp -> 1659611169
+image_msg stamp -> 1659611169
+--------
+nsec:
+points    stamp -> 325408220
+image_msg stamp -> 280302247
+--------  544  --------
+sec:
+points    stamp -> 1659611169
+image_msg stamp -> 1659611169
+--------
+nsec:
+points    stamp -> 424693346
+image_msg stamp -> 380128202
+--------  545  --------
+sec:
+points    stamp -> 1659611169
+image_msg stamp -> 1659611169
+--------
+nsec:
+points    stamp -> 523985386
+image_msg stamp -> 480273434
+--------  546  --------
+sec:
+points    stamp -> 1659611169
+image_msg stamp -> 1659611169
+--------
+nsec:
+points    stamp -> 623935938
+image_msg stamp -> 580199994
+--------  547  --------
+sec:
+points    stamp -> 1659611169
+image_msg stamp -> 1659611169
+--------
+nsec:
+points    stamp -> 723916054
+image_msg stamp -> 680255343
+--------  548  --------
+sec:
+points    stamp -> 1659611169
+image_msg stamp -> 1659611169
+--------
+nsec:
+points    stamp -> 824481010
+image_msg stamp -> 780246937
+--------  549  --------
+sec:
+points    stamp -> 1659611169
+image_msg stamp -> 1659611169
+--------
+nsec:
+points    stamp -> 924483538
+image_msg stamp -> 880202235
+--------  550  --------
+sec:
+points    stamp -> 1659611170
+image_msg stamp -> 1659611169
+--------
+nsec:
+points    stamp -> 24423122
+image_msg stamp -> 980247443
+--------  551  --------
+sec:
+points    stamp -> 1659611170
+image_msg stamp -> 1659611170
+--------
+nsec:
+points    stamp -> 125022411
+image_msg stamp -> 80519612
+--------  552  --------
+sec:
+points    stamp -> 1659611170
+image_msg stamp -> 1659611170
+--------
+nsec:
+points    stamp -> 224985600
+image_msg stamp -> 180487549
+--------  553  --------
+sec:
+points    stamp -> 1659611170
+image_msg stamp -> 1659611170
+--------
+nsec:
+points    stamp -> 324915886
+image_msg stamp -> 280299691
+--------  554  --------
+sec:
+points    stamp -> 1659611170
+image_msg stamp -> 1659611170
+--------
+nsec:
+points    stamp -> 424254894
+image_msg stamp -> 380365733
+--------  555  --------
+sec:
+points    stamp -> 1659611170
+image_msg stamp -> 1659611170
+--------
+nsec:
+points    stamp -> 524200201
+image_msg stamp -> 480533022
+--------  556  --------
+sec:
+points    stamp -> 1659611170
+image_msg stamp -> 1659611170
+--------
+nsec:
+points    stamp -> 624141455
+image_msg stamp -> 580387739
+--------  557  --------
+sec:
+points    stamp -> 1659611170
+image_msg stamp -> 1659611170
+--------
+nsec:
+points    stamp -> 724747181
+image_msg stamp -> 680397034
+--------  558  --------
+sec:
+points    stamp -> 1659611170
+image_msg stamp -> 1659611170
+--------
+nsec:
+points    stamp -> 824667215
+image_msg stamp -> 780419044
+--------  559  --------
+sec:
+points    stamp -> 1659611170
+image_msg stamp -> 1659611170
+--------
+nsec:
+points    stamp -> 924611330
+image_msg stamp -> 880392811
+--------  560  --------
+sec:
+points    stamp -> 1659611171
+image_msg stamp -> 1659611170
+--------
+nsec:
+points    stamp -> 24599791
+image_msg stamp -> 980389301
+--------  561  --------
+sec:
+points    stamp -> 1659611171
+image_msg stamp -> 1659611171
+--------
+nsec:
+points    stamp -> 124559641
+image_msg stamp -> 80426063
+--------  562  --------
+sec:
+points    stamp -> 1659611171
+image_msg stamp -> 1659611171
+--------
+nsec:
+points    stamp -> 224524021
+image_msg stamp -> 180408886
+--------  563  --------
+sec:
+points    stamp -> 1659611171
+image_msg stamp -> 1659611171
+--------
+nsec:
+points    stamp -> 323821783
+image_msg stamp -> 280705203
+--------  564  --------
+sec:
+points    stamp -> 1659611171
+image_msg stamp -> 1659611171
+--------
+nsec:
+points    stamp -> 423696756
+image_msg stamp -> 380783124
+--------  565  --------
+sec:
+points    stamp -> 1659611171
+image_msg stamp -> 1659611171
+--------
+nsec:
+points    stamp -> 523690224
+image_msg stamp -> 480749461
+--------  566  --------
+sec:
+points    stamp -> 1659611171
+image_msg stamp -> 1659611171
+--------
+nsec:
+points    stamp -> 624217510
+image_msg stamp -> 580643371
+--------  567  --------
+sec:
+points    stamp -> 1659611171
+image_msg stamp -> 1659611171
+--------
+nsec:
+points    stamp -> 724261522
+image_msg stamp -> 680565388
+--------  568  --------
+sec:
+points    stamp -> 1659611171
+image_msg stamp -> 1659611171
+--------
+nsec:
+points    stamp -> 824216843
+image_msg stamp -> 780545429
+--------  569  --------
+sec:
+points    stamp -> 1659611171
+image_msg stamp -> 1659611171
+--------
+nsec:
+points    stamp -> 924833298
+image_msg stamp -> 880690295
+--------  570  --------
+sec:
+points    stamp -> 1659611172
+image_msg stamp -> 1659611171
+--------
+nsec:
+points    stamp -> 24809837
+image_msg stamp -> 980601406
+--------  571  --------
+sec:
+points    stamp -> 1659611172
+image_msg stamp -> 1659611172
+--------
+nsec:
+points    stamp -> 124081850
+image_msg stamp -> 80568221
+--------  572  --------
+sec:
+points    stamp -> 1659611172
+image_msg stamp -> 1659611172
+--------
+nsec:
+points    stamp -> 224025488
+image_msg stamp -> 180864860
+--------  573  --------
+sec:
+points    stamp -> 1659611172
+image_msg stamp -> 1659611172
+--------
+nsec:
+points    stamp -> 323987961
+image_msg stamp -> 314081064
+--------  574  --------
+sec:
+points    stamp -> 1659611172
+image_msg stamp -> 1659611172
+--------
+nsec:
+points    stamp -> 423935890
+image_msg stamp -> 347483578
+--------  575  --------
+sec:
+points    stamp -> 1659611172
+image_msg stamp -> 1659611172
+--------
+nsec:
+points    stamp -> 524158716
+image_msg stamp -> 480714390
+--------  576  --------
+sec:
+points    stamp -> 1659611172
+image_msg stamp -> 1659611172
+--------
+nsec:
+points    stamp -> 623842239
+image_msg stamp -> 580946926
+--------  577  --------
+sec:
+points    stamp -> 1659611172
+image_msg stamp -> 1659611172
+--------
+nsec:
+points    stamp -> 724452019
+image_msg stamp -> 680709170
+--------  578  --------
+sec:
+points    stamp -> 1659611172
+image_msg stamp -> 1659611172
+--------
+nsec:
+points    stamp -> 824428320
+image_msg stamp -> 780742152
+--------  579  --------
+sec:
+points    stamp -> 1659611172
+image_msg stamp -> 1659611172
+--------
+nsec:
+points    stamp -> 924353600
+image_msg stamp -> 880730425
+--------  580  --------
+sec:
+points    stamp -> 1659611173
+image_msg stamp -> 1659611172
+--------
+nsec:
+points    stamp -> 24346113
+image_msg stamp -> 980826365
+--------  581  --------
+sec:
+points    stamp -> 1659611173
+image_msg stamp -> 1659611173
+--------
+nsec:
+points    stamp -> 124303102
+image_msg stamp -> 81032972
+--------  582  --------
+sec:
+points    stamp -> 1659611173
+image_msg stamp -> 1659611173
+--------
+nsec:
+points    stamp -> 224258661
+image_msg stamp -> 181068434
+--------  583  --------
+sec:
+points    stamp -> 1659611173
+image_msg stamp -> 1659611173
+--------
+nsec:
+points    stamp -> 324189663
+image_msg stamp -> 280955016
+--------  584  --------
+sec:
+points    stamp -> 1659611173
+image_msg stamp -> 1659611173
+--------
+nsec:
+points    stamp -> 424105167
+image_msg stamp -> 381054025
+--------  585  --------
+sec:
+points    stamp -> 1659611173
+image_msg stamp -> 1659611173
+--------
+nsec:
+points    stamp -> 524071693
+image_msg stamp -> 480849695
+--------  586  --------
+sec:
+points    stamp -> 1659611173
+image_msg stamp -> 1659611173
+--------
+nsec:
+points    stamp -> 624054670
+image_msg stamp -> 580839076
+--------  587  --------
+sec:
+points    stamp -> 1659611173
+image_msg stamp -> 1659611173
+--------
+nsec:
+points    stamp -> 724019766
+image_msg stamp -> 680946538
+--------  588  --------
+sec:
+points    stamp -> 1659611173
+image_msg stamp -> 1659611173
+--------
+nsec:
+points    stamp -> 824602365
+image_msg stamp -> 781196956
+--------  589  --------
+sec:
+points    stamp -> 1659611173
+image_msg stamp -> 1659611173
+--------
+nsec:
+points    stamp -> 924575090
+image_msg stamp -> 881045900
+--------  590  --------
+sec:
+points    stamp -> 1659611174
+image_msg stamp -> 1659611173
+--------
+nsec:
+points    stamp -> 24469614
+image_msg stamp -> 981083934
+--------  591  --------
+sec:
+points    stamp -> 1659611174
+image_msg stamp -> 1659611174
+--------
+nsec:
+points    stamp -> 124464750
+image_msg stamp -> 81089687
+--------  592  --------
+sec:
+points    stamp -> 1659611174
+image_msg stamp -> 1659611174
+--------
+nsec:
+points    stamp -> 224543333
+image_msg stamp -> 181099115
+--------  593  --------
+sec:
+points    stamp -> 1659611174
+image_msg stamp -> 1659611174
+--------
+nsec:
+points    stamp -> 324318647
+image_msg stamp -> 280988200
+--------  594  --------
+sec:
+points    stamp -> 1659611174
+image_msg stamp -> 1659611174
+--------
+nsec:
+points    stamp -> 424274683
+image_msg stamp -> 381077817
+--------  595  --------
+sec:
+points    stamp -> 1659611174
+image_msg stamp -> 1659611174
+--------
+nsec:
+points    stamp -> 524274826
+image_msg stamp -> 481129671
+--------  596  --------
+sec:
+points    stamp -> 1659611174
+image_msg stamp -> 1659611174
+--------
+nsec:
+points    stamp -> 624242783
+image_msg stamp -> 581042334
+--------  597  --------
+sec:
+points    stamp -> 1659611174
+image_msg stamp -> 1659611174
+--------
+nsec:
+points    stamp -> 724195004
+image_msg stamp -> 681139709
+--------  598  --------
+sec:
+points    stamp -> 1659611174
+image_msg stamp -> 1659611174
+--------
+nsec:
+points    stamp -> 824791193
+image_msg stamp -> 781076415
+--------  599  --------
+sec:
+points    stamp -> 1659611174
+image_msg stamp -> 1659611174
+--------
+nsec:
+points    stamp -> 924733162
+image_msg stamp -> 881270268
+--------  600  --------
+sec:
+points    stamp -> 1659611175
+image_msg stamp -> 1659611174
+--------
+nsec:
+points    stamp -> 24724960
+image_msg stamp -> 981233546
+--------  601  --------
+sec:
+points    stamp -> 1659611175
+image_msg stamp -> 1659611175
+--------
+nsec:
+points    stamp -> 124622822
+image_msg stamp -> 81166676
+--------  602  --------
+sec:
+points    stamp -> 1659611175
+image_msg stamp -> 1659611175
+--------
+nsec:
+points    stamp -> 224586248
+image_msg stamp -> 214535655
+--------  603  --------
+sec:
+points    stamp -> 1659611175
+image_msg stamp -> 1659611175
+--------
+nsec:
+points    stamp -> 324545383
+image_msg stamp -> 314577944
+--------  604  --------
+sec:
+points    stamp -> 1659611175
+image_msg stamp -> 1659611175
+--------
+nsec:
+points    stamp -> 424530029
+image_msg stamp -> 381238535
+--------  605  --------
+sec:
+points    stamp -> 1659611175
+image_msg stamp -> 1659611175
+--------
+nsec:
+points    stamp -> 524455070
+image_msg stamp -> 481410615
+--------  606  --------
+sec:
+points    stamp -> 1659611175
+image_msg stamp -> 1659611175
+--------
+nsec:
+points    stamp -> 625030756
+image_msg stamp -> 581262295
+--------  607  --------
+sec:
+points    stamp -> 1659611175
+image_msg stamp -> 1659611175
+--------
+nsec:
+points    stamp -> 725001574
+image_msg stamp -> 681224908
+--------  608  --------
+sec:
+points    stamp -> 1659611175
+image_msg stamp -> 1659611175
+--------
+nsec:
+points    stamp -> 824989080
+image_msg stamp -> 781287777
+--------  609  --------
+sec:
+points    stamp -> 1659611175
+image_msg stamp -> 1659611175
+--------
+nsec:
+points    stamp -> 924922228
+image_msg stamp -> 881338550
+--------  610  --------
+sec:
+points    stamp -> 1659611176
+image_msg stamp -> 1659611175
+--------
+nsec:
+points    stamp -> 24870634
+image_msg stamp -> 981386336
+--------  611  --------
+sec:
+points    stamp -> 1659611176
+image_msg stamp -> 1659611176
+--------
+nsec:
+points    stamp -> 124809265
+image_msg stamp -> 81395931
+--------  612  --------
+sec:
+points    stamp -> 1659611176
+image_msg stamp -> 1659611176
+--------
+nsec:
+points    stamp -> 224799156
+image_msg stamp -> 181641805
+--------  613  --------
+sec:
+points    stamp -> 1659611176
+image_msg stamp -> 1659611176
+--------
+nsec:
+points    stamp -> 324773550
+image_msg stamp -> 281587480
+--------  614  --------
+sec:
+points    stamp -> 1659611176
+image_msg stamp -> 1659611176
+--------
+nsec:
+points    stamp -> 424695015
+image_msg stamp -> 414735070
+--------  615  --------
+sec:
+points    stamp -> 1659611176
+image_msg stamp -> 1659611176
+--------
+nsec:
+points    stamp -> 524631023
+image_msg stamp -> 481392015
+--------  616  --------
+sec:
+points    stamp -> 1659611176
+image_msg stamp -> 1659611176
+--------
+nsec:
+points    stamp -> 625066757
+image_msg stamp -> 581417726
+--------  617  --------
+sec:
+points    stamp -> 1659611176
+image_msg stamp -> 1659611176
+--------
+nsec:
+points    stamp -> 724519730
+image_msg stamp -> 681443532
+--------  618  --------
+sec:
+points    stamp -> 1659611176
+image_msg stamp -> 1659611176
+--------
+nsec:
+points    stamp -> 824868917
+image_msg stamp -> 781512367
+--------  619  --------
+sec:
+points    stamp -> 1659611176
+image_msg stamp -> 1659611176
+--------
+nsec:
+points    stamp -> 924449444
+image_msg stamp -> 881499264
+--------  620  --------
+sec:
+points    stamp -> 1659611177
+image_msg stamp -> 1659611176
+--------
+nsec:
+points    stamp -> 24366140
+image_msg stamp -> 981463731
+--------  621  --------
+sec:
+points    stamp -> 1659611177
+image_msg stamp -> 1659611177
+--------
+nsec:
+points    stamp -> 124344349
+image_msg stamp -> 81518457
+--------  622  --------
+sec:
+points    stamp -> 1659611177
+image_msg stamp -> 1659611177
+--------
+nsec:
+points    stamp -> 224320650
+image_msg stamp -> 181556585
+--------  623  --------
+sec:
+points    stamp -> 1659611177
+image_msg stamp -> 1659611177
+--------
+nsec:
+points    stamp -> 324938059
+image_msg stamp -> 281810053
+--------  624  --------
+sec:
+points    stamp -> 1659611177
+image_msg stamp -> 1659611177
+--------
+nsec:
+points    stamp -> 424872398
+image_msg stamp -> 381678148
+--------  625  --------
+sec:
+points    stamp -> 1659611177
+image_msg stamp -> 1659611177
+--------
+nsec:
+points    stamp -> 524871588
+image_msg stamp -> 481667538
+--------  626  --------
+sec:
+points    stamp -> 1659611177
+image_msg stamp -> 1659611177
+--------
+nsec:
+points    stamp -> 624779701
+image_msg stamp -> 581605100
+--------  627  --------
+sec:
+points    stamp -> 1659611177
+image_msg stamp -> 1659611177
+--------
+nsec:
+points    stamp -> 725099564
+image_msg stamp -> 681787584
+--------  628  --------
+sec:
+points    stamp -> 1659611177
+image_msg stamp -> 1659611177
+--------
+nsec:
+points    stamp -> 824644327
+image_msg stamp -> 781635732
+--------  629  --------
+sec:
+points    stamp -> 1659611177
+image_msg stamp -> 1659611177
+--------
+nsec:
+points    stamp -> 924609423
+image_msg stamp -> 881839302
+--------  630  --------
+sec:
+points    stamp -> 1659611178
+image_msg stamp -> 1659611177
+--------
+nsec:
+points    stamp -> 24550915
+image_msg stamp -> 981664420
+--------  631  --------
+sec:
+points    stamp -> 1659611178
+image_msg stamp -> 1659611178
+--------
+nsec:
+points    stamp -> 124568462
+image_msg stamp -> 81766398
+--------  632  --------
+sec:
+points    stamp -> 1659611178
+image_msg stamp -> 1659611178
+--------
+nsec:
+points    stamp -> 225161791
+image_msg stamp -> 182063473
+--------  633  --------
+sec:
+points    stamp -> 1659611178
+image_msg stamp -> 1659611178
+--------
+nsec:
+points    stamp -> 325114727
+image_msg stamp -> 281762476
+--------  634  --------
+sec:
+points    stamp -> 1659611178
+image_msg stamp -> 1659611178
+--------
+nsec:
+points    stamp -> 425053596
+image_msg stamp -> 381754917
+--------  635  --------
+sec:
+points    stamp -> 1659611178
+image_msg stamp -> 1659611178
+--------
+nsec:
+points    stamp -> 525016546
+image_msg stamp -> 481900293
+--------  636  --------
+sec:
+points    stamp -> 1659611178
+image_msg stamp -> 1659611178
+--------
+nsec:
+points    stamp -> 624913454
+image_msg stamp -> 581999797
+--------  637  --------
+sec:
+points    stamp -> 1659611178
+image_msg stamp -> 1659611178
+--------
+nsec:
+points    stamp -> 724919796
+image_msg stamp -> 682121198
+--------  638  --------
+sec:
+points    stamp -> 1659611178
+image_msg stamp -> 1659611178
+--------
+nsec:
+points    stamp -> 824835062
+image_msg stamp -> 782055085
+--------  639  --------
+sec:
+points    stamp -> 1659611178
+image_msg stamp -> 1659611178
+--------
+nsec:
+points    stamp -> 924857855
+image_msg stamp -> 881994101
+--------  640  --------
+sec:
+points    stamp -> 1659611179
+image_msg stamp -> 1659611178
+--------
+nsec:
+points    stamp -> 26000023
+image_msg stamp -> 981869845
+--------  641  --------
+sec:
+points    stamp -> 1659611179
+image_msg stamp -> 1659611179
+--------
+nsec:
+points    stamp -> 125423670
+image_msg stamp -> 82000803
+--------  642  --------
+sec:
+points    stamp -> 1659611179
+image_msg stamp -> 1659611179
+--------
+nsec:
+points    stamp -> 225353003
+image_msg stamp -> 181893102
+--------  643  --------
+sec:
+points    stamp -> 1659611179
+image_msg stamp -> 1659611179
+--------
+nsec:
+points    stamp -> 324661493
+image_msg stamp -> 282191777
+--------  644  --------
+sec:
+points    stamp -> 1659611179
+image_msg stamp -> 1659611179
+--------
+nsec:
+points    stamp -> 425910234
+image_msg stamp -> 382048418
+--------  645  --------
+sec:
+points    stamp -> 1659611179
+image_msg stamp -> 1659611179
+--------
+nsec:
+points    stamp -> 524498940
+image_msg stamp -> 482249564
+--------  646  --------
+sec:
+points    stamp -> 1659611179
+image_msg stamp -> 1659611179
+--------
+nsec:
+points    stamp -> 624444485
+image_msg stamp -> 582217458
+--------  647  --------
+sec:
+points    stamp -> 1659611179
+image_msg stamp -> 1659611179
+--------
+nsec:
+points    stamp -> 724469423
+image_msg stamp -> 682018901
+--------  648  --------
+sec:
+points    stamp -> 1659611179
+image_msg stamp -> 1659611179
+--------
+nsec:
+points    stamp -> 825441599
+image_msg stamp -> 782037227
+--------  649  --------
+sec:
+points    stamp -> 1659611179
+image_msg stamp -> 1659611179
+--------
+nsec:
+points    stamp -> 925044775
+image_msg stamp -> 882018292
+--------  650  --------
+sec:
+points    stamp -> 1659611180
+image_msg stamp -> 1659611179
+--------
+nsec:
+points    stamp -> 25438070
+image_msg stamp -> 982279023
+--------  651  --------
+sec:
+points    stamp -> 1659611180
+image_msg stamp -> 1659611180
+--------
+nsec:
+points    stamp -> 124952316
+image_msg stamp -> 82265661
+--------  652  --------
+sec:
+points    stamp -> 1659611180
+image_msg stamp -> 1659611180
+--------
+nsec:
+points    stamp -> 224896669
+image_msg stamp -> 182083279
+--------  653  --------
+sec:
+points    stamp -> 1659611180
+image_msg stamp -> 1659611180
+--------
+nsec:
+points    stamp -> 324848175
+image_msg stamp -> 282086173
+--------  654  --------
+sec:
+points    stamp -> 1659611180
+image_msg stamp -> 1659611180
+--------
+nsec:
+points    stamp -> 424764395
+image_msg stamp -> 382124328
+--------  655  --------
+sec:
+points    stamp -> 1659611180
+image_msg stamp -> 1659611180
+--------
+nsec:
+points    stamp -> 525465012
+image_msg stamp -> 482182194
+--------  656  --------
+sec:
+points    stamp -> 1659611180
+image_msg stamp -> 1659611180
+--------
+nsec:
+points    stamp -> 624674320
+image_msg stamp -> 582233144
+--------  657  --------
+sec:
+points    stamp -> 1659611180
+image_msg stamp -> 1659611180
+--------
+nsec:
+points    stamp -> 724640846
+image_msg stamp -> 682257040
+--------  658  --------
+sec:
+points    stamp -> 1659611180
+image_msg stamp -> 1659611180
+--------
+nsec:
+points    stamp -> 824620962
+image_msg stamp -> 782320424
+--------  659  --------
+sec:
+points    stamp -> 1659611180
+image_msg stamp -> 1659611180
+--------
+nsec:
+points    stamp -> 924490213
+image_msg stamp -> 882390033
+--------  660  --------
+sec:
+points    stamp -> 1659611181
+image_msg stamp -> 1659611180
+--------
+nsec:
+points    stamp -> 24493456
+image_msg stamp -> 982273124
+--------  661  --------
+sec:
+points    stamp -> 1659611181
+image_msg stamp -> 1659611181
+--------
+nsec:
+points    stamp -> 125140429
+image_msg stamp -> 82304264
+--------  662  --------
+sec:
+points    stamp -> 1659611181
+image_msg stamp -> 1659611181
+--------
+nsec:
+points    stamp -> 225058794
+image_msg stamp -> 182479039
+--------  663  --------
+sec:
+points    stamp -> 1659611181
+image_msg stamp -> 1659611181
+--------
+nsec:
+points    stamp -> 325035095
+image_msg stamp -> 282265373
+--------  664  --------
+sec:
+points    stamp -> 1659611181
+image_msg stamp -> 1659611181
+--------
+nsec:
+points    stamp -> 424946785
+image_msg stamp -> 382439633
+--------  665  --------
+sec:
+points    stamp -> 1659611181
+image_msg stamp -> 1659611181
+--------
+nsec:
+points    stamp -> 524887323
+image_msg stamp -> 482322715
+--------  666  --------
+sec:
+points    stamp -> 1659611181
+image_msg stamp -> 1659611181
+--------
+nsec:
+points    stamp -> 624864817
+image_msg stamp -> 582311881
+--------  667  --------
+sec:
+points    stamp -> 1659611181
+image_msg stamp -> 1659611181
+--------
+nsec:
+points    stamp -> 724847794
+image_msg stamp -> 682437515
+--------  668  --------
+sec:
+points    stamp -> 1659611181
+image_msg stamp -> 1659611181
+--------
+nsec:
+points    stamp -> 824799538
+image_msg stamp -> 782433495
+--------  669  --------
+sec:
+points    stamp -> 1659611181
+image_msg stamp -> 1659611181
+--------
+nsec:
+points    stamp -> 924704313
+image_msg stamp -> 882460752
+--------  670  --------
+sec:
+points    stamp -> 1659611182
+image_msg stamp -> 1659611181
+--------
+nsec:
+points    stamp -> 25338411
+image_msg stamp -> 982400909
+--------  671  --------
+sec:
+points    stamp -> 1659611182
+image_msg stamp -> 1659611182
+--------
+nsec:
+points    stamp -> 125243664
+image_msg stamp -> 82419894
+--------  672  --------
+sec:
+points    stamp -> 1659611182
+image_msg stamp -> 1659611182
+--------
+nsec:
+points    stamp -> 225234270
+image_msg stamp -> 182736436
+--------  673  --------
+sec:
+points    stamp -> 1659611182
+image_msg stamp -> 1659611182
+--------
+nsec:
+points    stamp -> 325145006
+image_msg stamp -> 282447864
+--------  674  --------
+sec:
+points    stamp -> 1659611182
+image_msg stamp -> 1659611182
+--------
+nsec:
+points    stamp -> 425149202
+image_msg stamp -> 382465492
+--------  675  --------
+sec:
+points    stamp -> 1659611182
+image_msg stamp -> 1659611182
+--------
+nsec:
+points    stamp -> 525906801
+image_msg stamp -> 482537224
+--------  676  --------
+sec:
+points    stamp -> 1659611182
+image_msg stamp -> 1659611182
+--------
+nsec:
+points    stamp -> 625026226
+image_msg stamp -> 582578241
+--------  677  --------
+sec:
+points    stamp -> 1659611182
+image_msg stamp -> 1659611182
+--------
+nsec:
+points    stamp -> 725031614
+image_msg stamp -> 682637693
+--------  678  --------
+sec:
+points    stamp -> 1659611182
+image_msg stamp -> 1659611182
+--------
+nsec:
+points    stamp -> 824951649
+image_msg stamp -> 782691803
+--------  679  --------
+sec:
+points    stamp -> 1659611182
+image_msg stamp -> 1659611182
+--------
+nsec:
+points    stamp -> 924879074
+image_msg stamp -> 882813041
+--------  680  --------
+sec:
+points    stamp -> 1659611183
+image_msg stamp -> 1659611182
+--------
+nsec:
+points    stamp -> 24845362
+image_msg stamp -> 982620970
+--------  681  --------
+sec:
+points    stamp -> 1659611183
+image_msg stamp -> 1659611183
+--------
+nsec:
+points    stamp -> 124784231
+image_msg stamp -> 82613666
+--------  682  --------
+sec:
+points    stamp -> 1659611183
+image_msg stamp -> 1659611183
+--------
+nsec:
+points    stamp -> 224786997
+image_msg stamp -> 182812814
+--------  683  --------
+sec:
+points    stamp -> 1659611183
+image_msg stamp -> 1659611183
+--------
+nsec:
+points    stamp -> 324707985
+image_msg stamp -> 282837080
+--------  684  --------
+sec:
+points    stamp -> 1659611183
+image_msg stamp -> 1659611183
+--------
+nsec:
+points    stamp -> 424668789
+image_msg stamp -> 382779493
+--------  685  --------
+sec:
+points    stamp -> 1659611183
+image_msg stamp -> 1659611183
+--------
+nsec:
+points    stamp -> 524609804
+image_msg stamp -> 482708453
+--------  686  --------
+sec:
+points    stamp -> 1659611183
+image_msg stamp -> 1659611183
+--------
+nsec:
+points    stamp -> 625253201
+image_msg stamp -> 582785166
+--------  687  --------
+sec:
+points    stamp -> 1659611183
+image_msg stamp -> 1659611183
+--------
+nsec:
+points    stamp -> 725155592
+image_msg stamp -> 682838543
+--------  688  --------
+sec:
+points    stamp -> 1659611183
+image_msg stamp -> 1659611183
+--------
+nsec:
+points    stamp -> 825170755
+image_msg stamp -> 782816418
+--------  689  --------
+sec:
+points    stamp -> 1659611183
+image_msg stamp -> 1659611183
+--------
+nsec:
+points    stamp -> 926389694
+image_msg stamp -> 883099538
+--------  690  --------
+sec:
+points    stamp -> 1659611184
+image_msg stamp -> 1659611183
+--------
+nsec:
+points    stamp -> 25047541
+image_msg stamp -> 982842388
+--------  691  --------
+sec:
+points    stamp -> 1659611184
+image_msg stamp -> 1659611184
+--------
+nsec:
+points    stamp -> 126656532
+image_msg stamp -> 82828298
+--------  692  --------
+sec:
+points    stamp -> 1659611184
+image_msg stamp -> 1659611184
+--------
+nsec:
+points    stamp -> 224926472
+image_msg stamp -> 182793905
+--------  693  --------
+sec:
+points    stamp -> 1659611184
+image_msg stamp -> 1659611184
+--------
+nsec:
+points    stamp -> 324891090
+image_msg stamp -> 282882916
+--------  694  --------
+sec:
+points    stamp -> 1659611184
+image_msg stamp -> 1659611184
+--------
+nsec:
+points    stamp -> 424885750
+image_msg stamp -> 382895634
+--------  695  --------
+sec:
+points    stamp -> 1659611184
+image_msg stamp -> 1659611184
+--------
+nsec:
+points    stamp -> 524790764
+image_msg stamp -> 482973585
+--------  696  --------
+sec:
+points    stamp -> 1659611184
+image_msg stamp -> 1659611184
+--------
+nsec:
+points    stamp -> 624755859
+image_msg stamp -> 583078541
+--------  697  --------
+sec:
+points    stamp -> 1659611184
+image_msg stamp -> 1659611184
+--------
+nsec:
+points    stamp -> 724705696
+image_msg stamp -> 683132831
+--------  698  --------
+sec:
+points    stamp -> 1659611184
+image_msg stamp -> 1659611184
+--------
+nsec:
+points    stamp -> 824613571
+image_msg stamp -> 782941968
+--------  699  --------
+sec:
+points    stamp -> 1659611184
+image_msg stamp -> 1659611184
+--------
+nsec:
+points    stamp -> 925315857
+image_msg stamp -> 883096152
+--------  700  --------
+sec:
+points    stamp -> 1659611185
+image_msg stamp -> 1659611184
+--------
+nsec:
+points    stamp -> 25779724
+image_msg stamp -> 983072015
+--------  701  --------
+sec:
+points    stamp -> 1659611185
+image_msg stamp -> 1659611185
+--------
+nsec:
+points    stamp -> 125182152
+image_msg stamp -> 83258822
+--------  702  --------
+sec:
+points    stamp -> 1659611185
+image_msg stamp -> 1659611185
+--------
+nsec:
+points    stamp -> 225117207
+image_msg stamp -> 183192024
+--------  703  --------
+sec:
+points    stamp -> 1659611185
+image_msg stamp -> 1659611185
+--------
+nsec:
+points    stamp -> 325054169
+image_msg stamp -> 283183054
+--------  704  --------
+sec:
+points    stamp -> 1659611185
+image_msg stamp -> 1659611185
+--------
+nsec:
+points    stamp -> 426855326
+image_msg stamp -> 383213957
+--------  705  --------
+sec:
+points    stamp -> 1659611185
+image_msg stamp -> 1659611185
+--------
+nsec:
+points    stamp -> 524992466
+image_msg stamp -> 483080487
+--------  706  --------
+sec:
+points    stamp -> 1659611185
+image_msg stamp -> 1659611185
+--------
+nsec:
+points    stamp -> 624924421
+image_msg stamp -> 583096333
+--------  707  --------
+sec:
+points    stamp -> 1659611185
+image_msg stamp -> 1659611185
+--------
+nsec:
+points    stamp -> 724935770
+image_msg stamp -> 683092280
+--------  708  --------
+sec:
+points    stamp -> 1659611185
+image_msg stamp -> 1659611185
+--------
+nsec:
+points    stamp -> 824810982
+image_msg stamp -> 783221242
+--------  709  --------
+sec:
+points    stamp -> 1659611185
+image_msg stamp -> 1659611185
+--------
+nsec:
+points    stamp -> 924802780
+image_msg stamp -> 883128597
+--------  710  --------
+sec:
+points    stamp -> 1659611186
+image_msg stamp -> 1659611185
+--------
+nsec:
+points    stamp -> 24755239
+image_msg stamp -> 983405172
+--------  711  --------
+sec:
+points    stamp -> 1659611186
+image_msg stamp -> 1659611186
+--------
+nsec:
+points    stamp -> 124716043
+image_msg stamp -> 83124378
+--------  712  --------
+sec:
+points    stamp -> 1659611186
+image_msg stamp -> 1659611186
+--------
+nsec:
+points    stamp -> 224652767
+image_msg stamp -> 183129548
+--------  713  --------
+sec:
+points    stamp -> 1659611186
+image_msg stamp -> 1659611186
+--------
+nsec:
+points    stamp -> 324598789
+image_msg stamp -> 283476260
+--------  714  --------
+sec:
+points    stamp -> 1659611186
+image_msg stamp -> 1659611186
+--------
+nsec:
+points    stamp -> 424554348
+image_msg stamp -> 383241429
+--------  715  --------
+sec:
+points    stamp -> 1659611186
+image_msg stamp -> 1659611186
+--------
+nsec:
+points    stamp -> 525175333
+image_msg stamp -> 483208181
+--------  716  --------
+sec:
+points    stamp -> 1659611186
+image_msg stamp -> 1659611186
+--------
+nsec:
+points    stamp -> 625163794
+image_msg stamp -> 583360895
+--------  717  --------
+sec:
+points    stamp -> 1659611186
+image_msg stamp -> 1659611186
+--------
+nsec:
+points    stamp -> 726139307
+image_msg stamp -> 683294365
+--------  718  --------
+sec:
+points    stamp -> 1659611186
+image_msg stamp -> 1659611186
+--------
+nsec:
+points    stamp -> 825018644
+image_msg stamp -> 783309459
+--------  719  --------
+sec:
+points    stamp -> 1659611186
+image_msg stamp -> 1659611186
+--------
+nsec:
+points    stamp -> 924982071
+image_msg stamp -> 883288825
+--------  720  --------
+sec:
+points    stamp -> 1659611187
+image_msg stamp -> 1659611186
+--------
+nsec:
+points    stamp -> 24979830
+image_msg stamp -> 983454983
+--------  721  --------
+sec:
+points    stamp -> 1659611187
+image_msg stamp -> 1659611187
+--------
+nsec:
+points    stamp -> 124931574
+image_msg stamp -> 83459474
+--------  722  --------
+sec:
+points    stamp -> 1659611187
+image_msg stamp -> 1659611187
+--------
+nsec:
+points    stamp -> 224876404
+image_msg stamp -> 183443122
+--------  723  --------
+sec:
+points    stamp -> 1659611187
+image_msg stamp -> 1659611187
+--------
+nsec:
+points    stamp -> 324804783
+image_msg stamp -> 283428691
+--------  724  --------
+sec:
+points    stamp -> 1659611187
+image_msg stamp -> 1659611187
+--------
+nsec:
+points    stamp -> 424750090
+image_msg stamp -> 383463124
+--------  725  --------
+sec:
+points    stamp -> 1659611187
+image_msg stamp -> 1659611187
+--------
+nsec:
+points    stamp -> 525382757
+image_msg stamp -> 483457518
+--------  726  --------
+sec:
+points    stamp -> 1659611187
+image_msg stamp -> 1659611187
+--------
+nsec:
+points    stamp -> 625355005
+image_msg stamp -> 583622307
+--------  727  --------
+sec:
+points    stamp -> 1659611187
+image_msg stamp -> 1659611187
+--------
+nsec:
+points    stamp -> 725397587
+image_msg stamp -> 683658165
+--------  728  --------
+sec:
+points    stamp -> 1659611187
+image_msg stamp -> 1659611187
+--------
+nsec:
+points    stamp -> 825254679
+image_msg stamp -> 783621601
+--------  729  --------
+sec:
+points    stamp -> 1659611187
+image_msg stamp -> 1659611187
+--------
+nsec:
+points    stamp -> 925216436
+image_msg stamp -> 883805990
+--------  730  --------
+sec:
+points    stamp -> 1659611188
+image_msg stamp -> 1659611187
+--------
+nsec:
+points    stamp -> 25144577
+image_msg stamp -> 983512474
+--------  731  --------
+sec:
+points    stamp -> 1659611188
+image_msg stamp -> 1659611188
+--------
+nsec:
+points    stamp -> 125100136
+image_msg stamp -> 83496514
+]0;root@0019143280bc: /data/workspace/yelongjie/projects/PointPainting/painting_ws/src/pcd/scripts/PointPainting/detector/toolsroot@0019143280bc:/data/workspace/yelongjie/projects/PointPainting/painting_ws/src/pcd/scripts/PointPainting/detector/tools# exit
+
+Script done on 2022-09-12 07:06:42-0400

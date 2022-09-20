@@ -1,0 +1,4 @@
+Script started on 2022-09-12 07:15:16-0400
+]0;root@0019143280bc: /data/workspace/yelongjie/projects/PointPainting/painting_ws/src/pcd/scripts/PointPainting/detector/toolsroot@0019143280bc:/data/workspace/yelongjie/projects/PointPainting/painting_ws/s[Krrc/pcd/scripts/PointPainting/detector/tools# exit
+
+Script done on 2022-09-12 07:15:24-0400
