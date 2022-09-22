@@ -44,6 +44,7 @@ class Painter:
         
         if calib_path is not None:
             self._calib_path = calib_path
+            self.calib = self.get_calib_fromfilepath(self._calib_path)
         
     def get_lidar(self, idx):
         lidar_file = self.root_split_path + 'velodyne/' + ('%s.bin' % idx)

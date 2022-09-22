@@ -8,3 +8,6 @@ venv/
 *.so
 *.zip
 *.bin
+
+tools/label/*
+tools/result/*
