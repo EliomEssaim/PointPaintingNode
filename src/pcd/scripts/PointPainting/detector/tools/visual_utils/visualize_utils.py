@@ -71,10 +71,12 @@ def boxes_to_corners_3d(boxes3d):
 
 def visualize_pts(pts, fig=None, bgcolor=(1, 1, 1), fgcolor=(0.0, 0.0, 0.0),
                   show_intensity=False, size=(600, 600), draw_origin=True):
+    global my_fig
     if not isinstance(pts, np.ndarray):
         pts = pts.cpu().numpy()
     if fig is None:
         fig = mlab.figure(figure=None, bgcolor=bgcolor, fgcolor=fgcolor, engine=None, size=size)
+        my_fig = fig
 
     if show_intensity:
         # G = mlab.points3d(pts[:, 0], pts[:, 1], pts[:, 2], pts[:, 3:], mode='sphere',
@@ -148,8 +150,9 @@ def draw_multi_grid_range(fig, grid_size=20, bv_range=(-60, -60, 60, 60)):
 
     return fig
 
-
+my_fig = None
 def draw_scenes(points, gt_boxes=None, ref_boxes=None, ref_scores=None, ref_labels=None):
+    global my_fig
     if not isinstance(points, np.ndarray):
         points = points.cpu().numpy()
     if ref_boxes is not None and not isinstance(ref_boxes, np.ndarray):
@@ -160,8 +163,8 @@ def draw_scenes(points, gt_boxes=None, ref_boxes=None, ref_scores=None, ref_labe
         ref_scores = ref_scores.cpu().numpy()
     if ref_labels is not None and not isinstance(ref_labels, np.ndarray):
         ref_labels = ref_labels.cpu().numpy()
-
-    fig = visualize_pts(points, show_intensity=True)
+    fig = mlab.gcf() if my_fig is not None else None
+    fig = visualize_pts(points, show_intensity=True,fig=fig)
     # fig = draw_multi_grid_range(fig, bv_range=(0, -40, 80, 40))
     if gt_boxes is not None:
         corners3d = boxes_to_corners_3d(gt_boxes)
@@ -176,7 +179,7 @@ def draw_scenes(points, gt_boxes=None, ref_boxes=None, ref_scores=None, ref_labe
                 cur_color = tuple(box_colormap[k % len(box_colormap)])
                 mask = (ref_labels == k)
                 fig = draw_corners3d(ref_corners3d[mask], fig=fig, color=cur_color, cls=ref_scores[mask], max_num=100)
-    mlab.view(azimuth=-179, elevation=83.0, distance=45.0, roll=90.0)
+    mlab.view(azimuth=-160, elevation=83.0, distance=70.0, roll=90.0)
     return fig
 
 

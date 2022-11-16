@@ -1,0 +1,57 @@
+https://docs.qq.com/doc/DVFd5cERKaElLTWVT?u=beef981ce631427bb1140aa20d1aa992
+http://home.ustc.edu.cn/~liuxiangyu/README_LINKE3.html
+
+def draw_cuboid(image, qs, color=(0, 0, 255), thickness=1):
+    ''' Draw 3d bounding box in image
+      qs: (8,3) array of vertices for the 3d box in following order:
+          1 -------- 0
+          /|         /|
+        2 -------- 3 .
+        | |        | |
+        . 5 -------- 4
+        |/         |/
+        6 -------- 7
+      '''
+    qs = qs.astype(np.int32)
+    for k in range(0, 4):
+      i, j = k, (k + 1) % 4
+      # use LINE_AA for opencv3
+      cv2.line(image, (qs[i, 0], qs[i, 1]), (qs[j, 0], qs[j, 1]),
+             color, thickness, cv2.LINE_AA)
+
+      i, j = k + 4, (k + 1) % 4 + 4
+      cv2.line(image, (qs[i, 0], qs[i, 1]), (qs[j, 0], qs[j, 1]),
+             color, thickness, cv2.LINE_AA)
+
+      i, j = k, k + 4
+      cv2.line(image, (qs[i, 0], qs[i, 1]), (qs[j, 0], qs[j, 1]),
+             color, thickness, cv2.LINE_AA)
+    return image
+
+
+def generate_corners3d_for_draw(self, tr_velo_to_cam):
+    """
+    generate corners3d representation for this object
+    :return corners_3d: (8, 3) corners of box3d in camera coord
+    """
+
+    l, h, w = self.l, self.h, self.w
+    x_corners = [l / 2, l / 2, -l / 2, -l / 2, l / 2, l / 2, -l / 2, -l / 2]
+    y_corners = [0, 0, 0, 0, -h, -h, -h, -h]
+    z_corners = [w / 2, -w / 2, -w / 2, w / 2, w / 2, -w / 2, -w / 2, w / 2]
+
+    R = np.array([[np.cos(self.ry), 0, np.sin(self.ry)],
+                    [0, 1, 0],
+                    [-np.sin(self.ry), 0, np.cos(self.ry)]])
+    corners3d = np.vstack([x_corners, y_corners, z_corners])  # (3, 8)
+    corners3d = np.dot(R, corners3d).T
+
+    corners3d = corners3d + self.pos   
+    point = np.hstack([corners3d, np.ones((len(corners3d),1))])
+    point = np.dot(tr_velo_to_cam, point.T)
+    point = point[:2]/point[2]
+    return point.T
+
+    box_3d = target.generate_corners3d_for_draw(calib.P2)   
+        box_3d = np.asarray(box_3d).astype(np.float64)
+        image = draw_cuboid(image, box_3d)

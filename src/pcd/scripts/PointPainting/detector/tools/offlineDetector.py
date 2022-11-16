@@ -107,9 +107,9 @@ def parse_config():
     parser.add_argument('--ckpt_dir', type=str, default=None, help='specify a ckpt directory to be evaluated if needed')
     parser.add_argument('--save_to_file', action='store_true', default=False, help='')
     parser.add_argument('--mode', type=str, default='file', help='')
-    parser.add_argument('--lidar_dir', type=str, default='/data/workspace/dataset/kitti/my_files/rosbag/2022-08-04/2022-08-04-19-05-14/data/training/velodyne')
-    parser.add_argument('--image_dir', type=str, default='/data/workspace/dataset/kitti/my_files/rosbag/2022-08-04/2022-08-04-19-05-14/data/training/image_2')
-    parser.add_argument('--label_dir', type=str, default='./label')
+    parser.add_argument('--lidar_dir', type=str, default='/media/johnhe/8C6DA37F246BD3C1/rosbag/zijian_2030demo/data/bin')
+    parser.add_argument('--image_dir', type=str, default='/media/johnhe/8C6DA37F246BD3C1/rosbag/zijian_2030demo/data/img')
+    parser.add_argument('--label_dir', type=str, default='/media/johnhe/8C6DA37F246BD3C1/rosbag/zijian_2030demo/data/txt')
 
     args = parser.parse_args()
    
@@ -213,7 +213,7 @@ def offlineDetection(args, points, image):
                         pred_dicts['pred_boxes'][i][4].item(),
                         pred_dicts['pred_boxes'][i][3].item(),
                         float(cam_xyz[0]),
-                        float(cam_xyz[1]),
+                        float(cam_xyz[1]) + pred_dicts['pred_boxes'][i][5].item()/2, # 底面中心点
                         float(cam_xyz[2]),
                         pred_dicts['pred_boxes'][i][6].item())
             result_str = " ".join([to_format(item) for item in result])

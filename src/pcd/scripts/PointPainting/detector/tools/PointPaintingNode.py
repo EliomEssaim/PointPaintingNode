@@ -31,6 +31,7 @@ from pcdet.datasets.processor.point_feature_encoder import PointFeatureEncoder
 from pcdet.datasets.processor.data_processor import DataProcessor
 import message_filters,cv_bridge
 from collections import defaultdict
+import cv2
 
 
 def get_quaternion_from_euler(roll=0, pitch=0, yaw=0):
@@ -163,6 +164,8 @@ def callbackPoints(args, points, image_msg):
     ### points prepared
     rectified_image = bridge.imgmsg_to_cv2(img_msg=image_msg)
     # painting
+    # rectified_image = cv2.pyrDown(rectified_image)
+    # rectified_image = cv2.resize(rectified_image,(384,768),interpolation=cv2.INTER_CUBIC)
     t0 = time.time()
     # points = debug_dict['points']
     points = painter.paint(points,rectified_image)
@@ -192,7 +195,7 @@ def callbackPoints(args, points, image_msg):
     objects.header.frame_id = "rslidar"
     # print(objects.header.stamp.secs, objects.header.stamp.nsecs)
     for i in range(len(pred_dicts['pred_labels'])):
-        if (pred_dicts['pred_labels'][i].item() == 1 and pred_dicts['pred_scores'][i].item() > 0.8) or \
+        if (pred_dicts['pred_labels'][i].item() == 1 and pred_dicts['pred_scores'][i].item() > 0.1) or \
                 (pred_dicts['pred_labels'][i].item() == 2 and pred_dicts['pred_scores'][i].item() > 0.1) or \
                 (pred_dicts['pred_labels'][i].item() == 3 and pred_dicts['pred_scores'][i].item() > 0.1):
             detectedObject = DetectedObject()
@@ -223,7 +226,7 @@ def realtime(args, cfg):
     dist_test = False
 
     rospy.init_node('PointPaintingDetector', anonymous=True)
-    detected_objects_pub = rospy.Publisher('/detection/pp_detector/objects', DetectedObjectArray, queue_size=100)
+    detected_objects_pub = rospy.Publisher('/detection/lidar_detector/objects', DetectedObjectArray, queue_size=100)
 
     from pcdet.datasets.kitti.kitti_dataset import KittiDataset
     dataset_cfg=cfg.DATA_CONFIG
@@ -268,10 +271,6 @@ def realtime(args, cfg):
     # codes for debugging
     # you can add anything useful for debugging to the debug_dict
     debug_dict = {}
-    import pickle
-    with open('points.pkl','rb') as f:
-        debug_dict['points'] = pickle.load(f)
-    ## debug end ##
     with torch.no_grad():
         model.load_params_from_file(filename=args.ckpt, logger=None, to_cpu=dist_test)
         model.cuda()
