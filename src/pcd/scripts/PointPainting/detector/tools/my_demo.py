@@ -236,7 +236,7 @@ def main():
             # @me
             for i in range(len(pred_dicts[0]['pred_labels'])):
                 if (pred_dicts[0]['pred_labels'][i].item() == 1 and pred_dicts[0]['pred_scores'][i].item() > 0.4) or \
-                        (pred_dicts[0]['pred_labels'][i].item() == 2 and pred_dicts[0]['pred_scores'][i].item() > 0.2) or \
+                        (pred_dicts[0]['pred_labels'][i].item() == 2 and pred_dicts[0]['pred_scores'][i].item() > 0.4) or \
                         (pred_dicts[0]['pred_labels'][i].item() == 3 and pred_dicts[0]['pred_scores'][i].item() > 0.4):
 
                     print(f"found idx of {idx}")
