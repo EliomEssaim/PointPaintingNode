@@ -25,9 +25,9 @@ index_to_cls = {
 }
 def draw_cuboid(image, qs, color=(0, 0, 255), thickness=1,cls_type='test'):
     ''' Draw 3d bounding box in image
-      qs: (8,3) array of vertices for the 3d box in following order:
+      qs: (8,2) array of vertices for the 3d box in following order:
           1 -------- 0
-          /|         /|
+         /|         /|
         2 -------- 3 .
         | |        | |
         . 5 -------- 4

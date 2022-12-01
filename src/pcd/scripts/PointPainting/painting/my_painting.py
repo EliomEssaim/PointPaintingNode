@@ -11,6 +11,7 @@ from mmseg.apis import inference_segmentor, init_segmentor
 import mmcv
 
 import pcdet_utils.calibration_kitti as calibration_kitti
+import cv2
 
 
 TRAINING_PATH = "../../detector/data/kitti/training/"
@@ -23,8 +24,8 @@ class Painter:
     def __init__(self, seg_net_index, calib_path=None):
         self.root_split_path = TRAINING_PATH
         self.save_path = TRAINING_PATH + "painted_lidar/"
-        if not os.path.exists(self.save_path):
-            os.mkdir(self.save_path)
+        # if not os.path.exists(self.save_path):
+        #     os.mkdir(self.save_path)
 
         self.seg_net_index = seg_net_index
         self.model = None
@@ -253,6 +254,20 @@ class Painter:
 
         return augmented_lidar
 
+    def get_mask_image(self,img,threshes=[0,0.4,0.4,0.35,0.4],color_map={0:(0,0,0),#background
+                                             1:(0,0,255),# bicycle
+                                             2:(255,0,0),# car
+                                             3:(0,255,0),#person
+                                             4:(0,0,255)}):#rider
+        import cv2
+        scores_from_cam = self.get_score_by_image(image=img)
+        
+        color_mask = np.zeros(img.shape)
+        for i in range(1,5):
+            color_mask[(scores_from_cam[:,:,i] > threshes[i])] = color_map[i]
+        color_mask.astype(int)
+        return ((img + color_mask) / 2).astype(int)
+
     def paint(self,points,image):
             
         # get segmentation score from network
@@ -297,4 +312,5 @@ class Painter:
 
 if __name__ == '__main__':
     painter = Painter(SEG_NET)
-    painter.run()
+    img = cv2.imread('/home/johnhe/PointPaintingNode_ws/src/pcd/scripts/PointPainting/detector/data/kitti/training/image_2/000010.png')
+    painter.get_mask_image(img)

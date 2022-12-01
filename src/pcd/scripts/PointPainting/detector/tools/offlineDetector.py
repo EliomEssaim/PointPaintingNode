@@ -25,6 +25,101 @@ from pcdet.datasets.processor.data_processor import DataProcessor
 import cv_bridge
 from collections import defaultdict
 
+def points_cam2img(points_3d, proj_mat):
+    """Project points in camera coordinates to image coordinates.
+    Args:
+        points_3d (torch.Tensor | np.ndarray): Points in shape (N, 3)
+        proj_mat (torch.Tensor | np.ndarray):
+            Transformation matrix between coordinates.
+        with_depth (bool, optional): Whether to keep depth in the output.
+            Defaults to False.
+    Returns:
+        (torch.Tensor | np.ndarray): Points in image coordinates,
+            with shape [N, 2] if `with_depth=False`, else [N, 3].
+    """
+    points_shape = list(points_3d.shape)
+    points_shape[-1] = 1
+
+    assert len(proj_mat.shape) == 2, 'The dimension of the projection'\
+        f' matrix should be 2 instead of {len(proj_mat.shape)}.'
+    d1, d2 = proj_mat.shape[:2]
+    assert (d1 == 3 and d2 == 3) or (d1 == 3 and d2 == 4) or (
+        d1 == 4 and d2 == 4), 'The shape of the projection matrix'\
+        f' ({d1}*{d2}) is not supported.'
+    if d1 == 3:
+        proj_mat_expanded = np.eye(4)
+        proj_mat_expanded[:d1, :d2] = proj_mat
+        proj_mat = proj_mat_expanded
+
+    # previous implementation use new_zeros, new_one yields better results
+    points_4 = np.concatenate((points_3d, np.ones(points_shape)), axis=-1)
+
+    point_2d = points_4 @ proj_mat.T
+    point_2d_res = point_2d[..., :2] / point_2d[..., 2:3]
+
+    return point_2d_res
+
+
+def bbox_to_box(dimension, location, rot_y, init_mat):
+    """
+    boxes:
+          4(000)              7(001)
+          -------------------
+         /|                 /|
+  5(100)/ |         6(101) / |
+        -------------------  |
+        | |               |  |
+        | |               |  |
+        | |0(010)         |  |3(011)
+        |  ------X--------|---
+        | /               | /
+        |/1(110)          |/
+        -------------------2(111)
+    connect line:
+    ((0, 1), (0, 3), (0, 4), (1, 2), (1, 5), (3, 2), (3, 7),
+     (4, 5), (4, 7), (2, 6), (5, 6), (6, 7),
+     (1, 6), (2, 5))
+    """
+    h, w, l = dimension
+    x, y, z = location
+
+    points = np.array(()).reshape(-1,3)
+    # 010
+    xyz = [x - l/2*np.cos(rot_y) - w/2*np.sin(rot_y), y + h*0   , z + l/2*np.sin(rot_y) - w/2*np.cos(rot_y)]
+    xyz = np.array(xyz).reshape(-1,3)
+    points = np.concatenate((points, xyz), axis=0)
+    # 110
+    xyz = [x + l/2*np.cos(rot_y) - w/2*np.sin(rot_y), y + h*0   , z - l/2*np.sin(rot_y) - w/2*np.cos(rot_y)]
+    xyz = np.array(xyz).reshape(-1,3)
+    points = np.concatenate((points, xyz), axis=0)
+    # 111
+    xyz = [x + l/2*np.cos(rot_y) + w/2*np.sin(rot_y), y + h*0   , z - l/2*np.sin(rot_y) + w/2*np.cos(rot_y)]
+    xyz = np.array(xyz).reshape(-1,3)
+    points = np.concatenate((points, xyz), axis=0) # [8, 3]
+    # 011
+    xyz = [x - l/2*np.cos(rot_y) + w/2*np.sin(rot_y), y + h*0   , z + l/2*np.sin(rot_y) + w/2*np.cos(rot_y)]
+    xyz = np.array(xyz).reshape(-1,3)
+    points = np.concatenate((points, xyz), axis=0)
+    # 000
+    xyz = [x - l/2*np.cos(rot_y) - w/2*np.sin(rot_y), y - h/1     , z + l/2*np.sin(rot_y) - w/2*np.cos(rot_y)]
+    xyz = np.array(xyz).reshape(-1,3)
+    points = np.concatenate((points, xyz), axis=0)
+    # 100
+    xyz = [x + l/2*np.cos(rot_y) - w/2*np.sin(rot_y), y - h/1     , z - l/2*np.sin(rot_y) - w/2*np.cos(rot_y)]
+    xyz = np.array(xyz).reshape(-1,3)
+    points = np.concatenate((points, xyz), axis=0)
+    # 101
+    xyz = [x + l/2*np.cos(rot_y) + w/2*np.sin(rot_y), y - h/1     , z - l/2*np.sin(rot_y) + w/2*np.cos(rot_y)]
+    xyz = np.array(xyz).reshape(-1,3)
+    points = np.concatenate((points, xyz), axis=0)
+    # 001
+    xyz = [x - l/2*np.cos(rot_y) + w/2*np.sin(rot_y), y - h/1     , z + l/2*np.sin(rot_y) + w/2*np.cos(rot_y)]
+    xyz = np.array(xyz).reshape(-1,3)
+    points = np.concatenate((points, xyz), axis=0)
+
+    points = points_cam2img(points, init_mat) # [8, 2]
+    return np.min(points[:,0]), np.min(points[:,1]), np.max(points[:,0]), np.max(points[:,1])
+
 
 def get_quaternion_from_euler(roll=0, pitch=0, yaw=0):
     """
@@ -179,9 +274,9 @@ def offlineDetection(args, points, image):
     # print(objects.header.stamp.secs, objects.header.stamp.nsecs)
     results = []
     for i in range(len(pred_dicts['pred_labels'])):
-        if (pred_dicts['pred_labels'][i].item() == 1 and pred_dicts['pred_scores'][i].item() > 0.8) or \
-                (pred_dicts['pred_labels'][i].item() == 2 and pred_dicts['pred_scores'][i].item() > 0.1) or \
-                (pred_dicts['pred_labels'][i].item() == 3 and pred_dicts['pred_scores'][i].item() > 0.1):
+        if (pred_dicts['pred_labels'][i].item() == 1 and pred_dicts['pred_scores'][i].item() > 0.4) or \
+                (pred_dicts['pred_labels'][i].item() == 2 and pred_dicts['pred_scores'][i].item() > 0.4) or \
+                (pred_dicts['pred_labels'][i].item() == 3 and pred_dicts['pred_scores'][i].item() > 0.4):
             detectedObject = DetectedObject()
 
             detectedObject.header.frame_id = "rslidar"
@@ -207,15 +302,23 @@ def offlineDetection(args, points, image):
             detectedObject.dimensions.z = pred_dicts['pred_boxes'][i][5].item() # h        
             objects.objects.append(detectedObject)
             to_format = lambda x:f"{x:.2f}" if type(x)!=type(str()) else x
+            dimension = (pred_dicts['pred_boxes'][i][5].item(),
+                        pred_dicts['pred_boxes'][i][4].item(),
+                        pred_dicts['pred_boxes'][i][3].item())
+            location = (float(cam_xyz[0]),
+                        float(cam_xyz[1]) + pred_dicts['pred_boxes'][i][5].item()/2,
+                        float(cam_xyz[2]))
+            box_2d = bbox_to_box(dimension, location, 3/2*np.pi - pred_dicts['pred_boxes'][i][6].item(), painter.calib['P2'])
+
             result = (  all_labels[pred_dicts['pred_labels'][i].item() - 1],
-                        0,0,0,0,0,0,0,
+                        0,0,0,box_2d,
                         pred_dicts['pred_boxes'][i][5].item(),
                         pred_dicts['pred_boxes'][i][4].item(),
                         pred_dicts['pred_boxes'][i][3].item(),
                         float(cam_xyz[0]),
                         float(cam_xyz[1]) + pred_dicts['pred_boxes'][i][5].item()/2, # 底面中心点
                         float(cam_xyz[2]),
-                        pred_dicts['pred_boxes'][i][6].item())
+                        3/2*np.pi - pred_dicts['pred_boxes'][i][6].item())
             result_str = " ".join([to_format(item) for item in result])
             results.append(result_str)
         else:

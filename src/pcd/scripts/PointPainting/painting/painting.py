@@ -12,6 +12,7 @@ import mmcv
 
 import pcdet_utils.calibration_kitti as calibration_kitti
 
+import cv2,os
 
 TRAINING_PATH = "../detector/data/kitti/training/"
 TWO_CAMERAS = True
@@ -240,7 +241,49 @@ class Painter:
             points = self.augment_lidar_class_scores_both(scores_from_cam_r, scores_from_cam, points, calib_fromfile)
             
             np.save(self.save_path + ("%06d.npy" % idx), points)
+            
+    def get_score_by_image(self,image):
 
+        result = inference_segmentor(self.model, image)
+        # person 11, rider 12, vehicle 13/14/15/16, bike 17/18
+        output_permute = torch.tensor(result[0]).permute(1,2,0) # H, W, 19
+        sf = torch.nn.Softmax(dim=2)
+
+        output_reassign = torch.zeros(output_permute.size(0),output_permute.size(1), 5)
+        output_reassign[:,:,0], _ = torch.max(output_permute[:,:,:11], dim=2) # background
+        output_reassign[:,:,1], _ = torch.max(output_permute[:,:,[17, 18]], dim=2) # bicycle
+        output_reassign[:,:,2], _ = torch.max(output_permute[:,:,[13, 14, 15, 16]], dim=2) # car
+        output_reassign[:,:,3] = output_permute[:,:,11] #person
+        output_reassign[:,:,4] = output_permute[:,:,12] #rider
+        output_reassign_softmax = sf(output_reassign).cpu().numpy()
+
+        return output_reassign_softmax
+    
+    def get_mask_image(self,img,threshes=[0,0.4,0.4,0.2,0.4],color_map={0:(0,0,0),#background
+                                             1:(0,0,255),# bicycle
+                                             2:(255,0,0),# car
+                                             3:(0,255,0),#person
+                                             4:(0,0,255)}):#rider
+        scores_from_cam = self.get_score_by_image(image=img)
+        
+        color_mask = np.zeros(img.shape)
+        for i in range(1,5):
+            color_mask[(scores_from_cam[:,:,i] > threshes[i])] = color_map[i]
+        color_mask.astype(int)
+        return ((img + color_mask) / 2).astype(int)
+
+def get_mask_images(painter:Painter,img_dir,output_dir,show=False):
+    files = sorted(os.listdir(img_dir))
+    if not os.path.exists(output_dir):
+        os.mkdir(output_dir)
+    for i,file in enumerate(files):
+        img = cv2.imread(os.path.join(img_dir,file))
+        res = painter.get_mask_image(img)
+        save_path = os.path.join(output_dir,f"{i:06d}.jpg")
+        if show: print(save_path)
+        cv2.imwrite(save_path,res)
+    print('done')
 if __name__ == '__main__':
     painter = Painter(SEG_NET)
-    painter.run()
+    get_mask_images(painter=painter,img_dir='/media/johnhe/8C6DA37F246BD3C1/rosbag/zijian_2030demo/data/img',
+                        output_dir='/media/johnhe/8C6DA37F246BD3C1/rosbag/zijian_2030demo/data/masked_img',show=True)

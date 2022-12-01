@@ -1,5 +1,3 @@
-from ast import operator
-from distutils.log import debug
 import sys
 import time
 PAIINTING_PATH = '../../painting'
@@ -31,7 +29,7 @@ from pcdet.datasets.processor.point_feature_encoder import PointFeatureEncoder
 from pcdet.datasets.processor.data_processor import DataProcessor
 import message_filters,cv_bridge
 from collections import defaultdict
-import cv2
+import cv2,copy
 
 
 def get_quaternion_from_euler(roll=0, pitch=0, yaw=0):
@@ -151,6 +149,7 @@ def callbackPoints(args, points, image_msg):
     data_processor = args[5]
 
     debug_dict = args[6]
+    painted_points_pub = args[7]
 
 
     sec = points.header.stamp.secs
@@ -169,9 +168,34 @@ def callbackPoints(args, points, image_msg):
     t0 = time.time()
     # points = debug_dict['points']
     points = painter.paint(points,rectified_image)
+    painted_points = copy.deepcopy(points)
+# [x,y,z,i,10000]
+# [x,y,z,i,01000]
+# [x,y,z,i,01100]
+# [x,y,z,i,00010]
+# [x,y,z,i,00001]
+    for i in range(painted_points.shape[0]):
+        if painted_points[i][8] > 0:
+            painted_points[i][3] = 200
+        elif painted_points[i][7] > 0:
+            painted_points[i][3] = 150
+        elif painted_points[i][6] > 0:
+            painted_points[i][3] = 100
+        elif painted_points[i][5] > 0:
+            painted_points[i][3] = 50
+        else:
+            painted_points[i][3] = 0
+    painted_points = painted_points[:,:4]
+# [x,y,z,0,]
+# [x,y,z,50,]
+# [x,y,z,100,]
+# [x,y,z,150,]
+# [x,y,z,200,]
     print(f"painting cost time {time.time() - t0}")
     
     t0 = time.time()
+    
+    painted_points_pub.publish(painted_points)
     input_dict = {'points': points,'frame_id': 0}
     # prepare_data
     
@@ -227,6 +251,7 @@ def realtime(args, cfg):
 
     rospy.init_node('PointPaintingDetector', anonymous=True)
     detected_objects_pub = rospy.Publisher('/detection/lidar_detector/objects', DetectedObjectArray, queue_size=100)
+    painted_points_pub = rospy.Publisher('/detection/lidar_detector/painted_points', PointCloud2, queue_size=100)
 
     from pcdet.datasets.kitti.kitti_dataset import KittiDataset
     dataset_cfg=cfg.DATA_CONFIG
@@ -277,7 +302,7 @@ def realtime(args, cfg):
         model.eval()
 
         # callback arguments, this args will be binded by partial funtions.
-        cb_args = [model,detected_objects_pub,painter,bridge,point_feature_encoder,data_processor,debug_dict]
+        cb_args = [model,detected_objects_pub,painter,bridge,point_feature_encoder,data_processor,debug_dict,painted_points_pub]
         callback_with_args = partial(callbackPoints,cb_args)
         sync.registerCallback(callback_with_args)
         print("PointPainting Node spining!")
